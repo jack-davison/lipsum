@@ -1,17 +1,23 @@
 Package: lipsum
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Obtain Lorem Ipsum Text From Web APIs
+Version: 0.0.1
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+    person("Jack", "Davison", , "davison.jack.jd@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2653-6615"))
+Description: Quickly generate placeholder text using web APIs.
+    Functionality includes both practical and whimsical text for many
+    applications.
 License: CC0
+URL: https://github.com/jack-davison/lipsum,
+    https://jack-davison.github.io/lipsum/
+BugReports: https://github.com/jack-davison/lipsum/issues
 Imports: 
     httr,
     jsonlite
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
-URL: https://github.com/jack-davison/lipsum,
-    https://jack-davison.github.io/lipsum/
-BugReports: https://github.com/jack-davison/lipsum/issues
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

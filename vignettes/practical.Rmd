@@ -1,0 +1,97 @@
+---
+title: "Practical Placeholders"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Practical Placeholders}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(lipsum)
+```
+
+# Loripsum
+
+The `loripsum()` function is probably the best go-to place holder text API in the package, and provides the most control over the output as far as contents are concerned.
+
+```{r}
+example_loripsum <-
+  loripsum(
+    n = 3L,
+    length = "short",
+    decorate = TRUE, # adds italics, bold, etc.
+    link = TRUE, # adds some links
+    ul = TRUE, # adds an unordered list (bullets)
+    ol = TRUE, # adds an ordererd list (numbers)
+    dl = TRUE, # adds a description list (headers and contents)
+    bq = TRUE, # adds a blockquote
+    code = TRUE, # adds code samples
+    headers = FALSE, # adds headers - may mess with RMarkdown/Quarto!
+    allcaps = FALSE, # capitalises the whole output
+    prude = TRUE # see above note
+  )
+```
+
+<details>
+<summary> View Output </summary>
+`r example_loripsum`
+</details>
+<br>
+
+# Markdown
+
+The Lorem Markdownum API is similar to the Loripsum API in terms of giving a lot of control over the output, but outputs the place holder text using markdown formatting.
+
+```{r}
+example_markdown <-
+  lipsum::markdownum(
+    n = 10L,
+    # drop various elements?
+    no_headers = TRUE,
+    no_code = FALSE,
+    no_inline_markup = FALSE,
+    no_quotes = FALSE,
+    no_lists = FALSE,
+    no_external_links = FALSE,
+    no_wrapping = FALSE,
+    # change formatting?
+    underline_headers = TRUE,
+    reference_links = TRUE,
+    underscore_em = TRUE,
+    underscore_strong = TRUE,
+    fenced_code_blocks = TRUE
+  )
+```
+
+<details>
+<summary> View Output </summary>
+
+`r example_markdown`
+
+</details>
+<br>
+
+# Corporate
+
+CorporateLorem is very different from Loripsum in that users get exceedingly little control over the output. In fact, the only control one truly gets is the number of paragraphs returned. However, unlike other lorem ipsum generators, the user receives actual English prose from a variety of topics. This output may be a bit less distracting to colleagues/clients compared to random Latin phrases.
+
+```{r}
+example_corporate <-
+  lipsum::corporatelorem(n = 3L)
+```
+
+<details>
+<summary> View Output </summary>
+`r example_corporate`
+</details>
+<br>
+
+
