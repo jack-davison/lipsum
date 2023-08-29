@@ -1,0 +1,60 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# lipsum
+
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/jack-davison/lipsum/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jack-davison/lipsum/actions/workflows/R-CMD-check.yaml)
+[![CRAN status](https://www.r-pkg.org/badges/version/lipsum)](https://CRAN.R-project.org/package=lipsum)
+<!-- badges: end -->
+
+The goal of lipsum is to get easy access to several "Lorem Ipsum" web APIs to simply generate customisable placeholder text. In the R world, this will most likely commonly be used within RMarkdown/Quarto documents and Shiny apps.
+
+The `{lorem}` package also serves a similar purpose, but `{lipsum}`'s interfacing with a variety of APIs may allow for more flexible placeholder outputs. For example, the `loripsum()` function gives a lot of control of the kinds of features the placeholder text should have (for example, lists, links, headers, and so on).
+
+`{lipsum}` owes a lot to the [awesome-ipsum](https://github.com/templeman/awesome-ipsum) list, and uses its same categorisations:
+
+* **Practical**, which are placeholder generators that are most useful for "professional" settings. These either generate text in Latin, or business-sounding text like newspaper articles.
+
+* **Whimsical**, which are more playful generators which impersonate celebrities, list the names of dinosaurs, use profanity, and so on. These are perhaps more appropriate for personal projects!
+
+## Installation
+
+You can install the development version of `{lipsum}` like so:
+
+``` r
+#install.packages("pak")
+pak::pak("jack-davison/lipsum")
+```
+
+## Example
+
+The below code generates example lorem ipsum generated using the [loripsum API](https://loripsum.net). This is the most useful, customisable function in the package, and is probably most appropriate for professional use.
+
+```{r example}
+ipsum <- lipsum::loripsum(n = 3, decorate = TRUE, ol = TRUE, bq = TRUE)
+```
+
+In R, the output looks like this:
+
+```{r r, results='markup'}
+cat(ipsum)
+```
+
+Using GitHub markdown, this ends up looking like:
+
+```{r md, results='asis'}
+cat(ipsum)
+```

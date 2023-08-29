@@ -55,4 +55,8 @@ loripsum(
 Generates random, customisable placeholder text using the Loripsum Web
 API.
 }
+\seealso{
+Other practical generators: 
+\code{\link{corporatelorem}()}
+}
 \concept{practical generators}
