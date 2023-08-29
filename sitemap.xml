@@ -13,6 +13,9 @@
     <loc>https://jack-davison.github.io/lipsum/index.html</loc>
   </url>
   <url>
+    <loc>https://jack-davison.github.io/lipsum/news/index.html</loc>
+  </url>
+  <url>
     <loc>https://jack-davison.github.io/lipsum/reference/corporatelorem.html</loc>
   </url>
   <url>
@@ -20,5 +23,8 @@
   </url>
   <url>
     <loc>https://jack-davison.github.io/lipsum/reference/loripsum.html</loc>
+  </url>
+  <url>
+    <loc>https://jack-davison.github.io/lipsum/reference/markdownum.html</loc>
   </url>
 </urlset>
