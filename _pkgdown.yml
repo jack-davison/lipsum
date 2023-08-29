@@ -1,4 +1,10 @@
 url: https://jack-davison.github.io/lipsum/
 template:
   bootstrap: 5
-
+reference:
+- title: Practical
+  desc: Obtain latin or professional-sounding placeholder text. Best used in professional settings.
+  contents: has_concept("practical generators")
+- title: Whimsical
+  desc: Obtain fun placeholder text from pop culture, science, literature and more. Best used in personal projects.
+  contents: has_concept("whimsical generators")
