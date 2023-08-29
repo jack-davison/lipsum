@@ -7,10 +7,10 @@
 \url{https://corporatelorem.kovah.de/}
 }
 \usage{
-corporatelorem(n = 3, paragraphs = TRUE, textformat = TRUE)
+corporatelorem(n = 5L, paragraphs = TRUE, textformat = TRUE)
 }
 \arguments{
-\item{n}{Integer. The number of paragraphs to generate. Defaults to 3.}
+\item{n}{Integer. The number of paragraphs to generate. Defaults to 5.}
 
 \item{paragraphs}{Logical. If \code{TRUE}, shows paragraph tags in the output. Defaults to \code{TRUE}.}
 
@@ -23,6 +23,7 @@ the NY Times, The Guardian and The Verge.
 }
 \seealso{
 Other practical generators: 
-\code{\link{loripsum}()}
+\code{\link{loripsum}()},
+\code{\link{markdownum}()}
 }
 \concept{practical generators}

@@ -2,3 +2,4 @@
 
 export(corporatelorem)
 export(loripsum)
+export(markdownum)

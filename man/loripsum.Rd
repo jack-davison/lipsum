@@ -8,7 +8,7 @@
 }
 \usage{
 loripsum(
-  n = 1L,
+  n = 5L,
   length = "short",
   decorate = FALSE,
   link = FALSE,
@@ -24,14 +24,14 @@ loripsum(
 )
 }
 \arguments{
-\item{n}{Integer. The number of paragraphs to generate. Defaults to 1.}
+\item{n}{Integer. The number of paragraphs to generate. Defaults to 5.}
 
 \item{length}{Character. The average length of a paragraph. Can be any of
 "short", "medium", "long" or "verylong". Defaults to "short".}
 
 \item{decorate}{Logical. If \code{TRUE}, bold, italic and marked text. Defaults to \code{FALSE}.}
 
-\item{link}{Logical. If \code{TRUE}, links. Defaults to \code{FALSE}.}
+\item{link}{Logical. If \code{TRUE}, adds links. Defaults to \code{FALSE}.}
 
 \item{ul}{Logical. If \code{TRUE}, adds unordered lists. Defaults to \code{FALSE}.}
 
@@ -57,6 +57,7 @@ API.
 }
 \seealso{
 Other practical generators: 
-\code{\link{corporatelorem}()}
+\code{\link{corporatelorem}()},
+\code{\link{markdownum}()}
 }
 \concept{practical generators}
