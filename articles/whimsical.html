@@ -157,26 +157,70 @@ them closely. Not meeting any sufficient response, he went on:–
 </details><p><br></p>
 </div>
 <div class="section level2">
+<h2 id="celebrity-imppersonations-devlorem">Celebrity Imppersonations: DevLorem<a class="anchor" aria-label="anchor" href="#celebrity-imppersonations-devlorem"></a>
+</h2>
+<p><code><a href="../reference/devlorem.html">devlorem()</a></code> gives very little control over its output.
+However, the output is pretty fun - it gives a few paragraphs
+impersonating a famous actor or pop culture icon.</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">example_dev</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/devlorem.html">devlorem</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">5L</span><span class="op">)</span></span></code></pre></div>
+<details><summary>
+View Output
+</summary><p>HP Lovecraft All I say is that I think it is damned unlikely that
+anything like a central cosmic will, a spirit world, or an eternal
+survival of personality exist. They are the most preposterous and
+unjustified of all the guesses which can be made about the universe, and
+I am not enough of a hair-splitter to pretend that I don’t regard them
+as arrant and negligible moonshine. In theory I am an agnostic, but
+pending the appearance of radical evidence I must be classed,
+practically and provisionally, as an atheist. Contrary to what you may
+assume, I am not a pessimist but an indifferentist- that is, I don’t
+make the mistake of thinking that the… cosmos… gives a damn one way or
+the other about the especial wants and ultimate welfare of mosquitoes,
+rats, lice, dogs, men, horses, pterodactyls, trees, fungi, dodos, or
+other forms of biological energy. At night, when the objective world has
+slunk back into its cavern and left dreamers to their own, there come
+inspirations and capabilities impossible at any less magical and quiet
+hour. No one knows whether or not he is a writer unless he has tried
+writing at night. There are not many persons who know what wonders are
+opened to them in the stories and visions of their youth; for when as
+children we learn and dream, we think but half-formed thoughts, and when
+as men we try to remember, we are dulled and prosaic with the poison of
+life. But some of us awake in the night with strange phantasms of
+enchanted hills and gardens, of fountains that sing in the sun, of
+golden cliffs overhanging murmuring seas, of plains that stretch down to
+sleeping cities of bronze and stone, and of shadowy companies of heroes
+that ride caparisoned white horses along the edges of thick forests; and
+then we know that we have looked back through the ivory gates into that
+world of wonder which was ours before we were wise and unhappy. The most
+merciful thing in the world, I think, is the inability of the human mind
+to correlate all its contents. We live on a placid island of ignorance
+in the midst of black seas of the infinity, and it was not meant that we
+should voyage far.</p>
+</details><p><br></p>
+</div>
+<div class="section level2">
 <h2 id="silly-metaphors-metaphorpsum">Silly Metaphors: Metaphorpsum<a class="anchor" aria-label="anchor" href="#silly-metaphors-metaphorpsum"></a>
 </h2>
 <p>The <code><a href="../reference/metaphorpsum.html">metaphorpsum()</a></code> function comes up with confusing
 metaphors. At a glance they read like English, but if readers dare look
 closer they’ll see they’re pretty nonsensical.</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">example_metaphor</span> <span class="op">&lt;-</span></span>
-<span>  <span class="fu"><a href="../reference/metaphorpsum.html">metaphorpsum</a></span><span class="op">(</span>n_paras <span class="op">=</span> <span class="fl">2</span>,</span>
-<span>               n_sentences <span class="op">=</span> <span class="fl">4</span>,</span>
+<span>  <span class="fu"><a href="../reference/metaphorpsum.html">metaphorpsum</a></span><span class="op">(</span>n_paras <span class="op">=</span> <span class="fl">2L</span>,</span>
+<span>               n_sentences <span class="op">=</span> <span class="fl">4L</span>,</span>
 <span>               p <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span> <span class="co"># use p tags?</span></span></code></pre></div>
 <details><summary>
 View Output
-</summary><p>The cupboard of an alarm becomes a stormproof silk. Those risks are
-nothing more than grains. The ungrown pansy reveals itself as an unlaid
-pie to those who look. The first unclimbed knot is, in its own way, an
-impulse.</p>
-Unfortunately, that is wrong; on the contrary, their shrine was, in this
-moment, a binate swallow. A lippy women is a locust of the mind. Few can
-name an akin vessel that isn’t an unshorn scent. However, a kitty is the
-step-aunt of a specialist.
+</summary><p>The literature would have us believe that a piquant waterfall is not
+but a dentist. Some intown haircuts are thought of simply as captains. A
+tablecloth is an attention from the right perspective. Their railway
+was, in this moment, an outright shelf.</p>
+To be more specific, some chastised powers are thought of simply as
+grips. Violins are hulky toads. They were lost without the felon
+gasoline that composed their octave. In ancient times a baccate
+internet’s algeria comes with it the thought that the fecund greece is a
+harmony.
 </details><p><br></p>
 </div>
 <div class="section level2">
@@ -186,7 +230,7 @@ step-aunt of a specialist.
 similar in that their options are identical and simply (partly) replace
 the random Latin of lorem ipsum with meat words and hipster-y phrases,
 respectively.</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">example_meat</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/baconipsum.html">baconipsum</a></span><span class="op">(</span>n_sentences <span class="op">=</span> <span class="fl">5L</span>,</span>
 <span>                           type <span class="op">=</span> <span class="st">"all-meat"</span>,</span>
 <span>                           start_with_lorem <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
@@ -197,21 +241,30 @@ respectively.</p>
 <details><summary>
 View Output
 </summary><p><strong>MEAT:</strong></p>
-<p>Bacon ipsum dolor amet pork belly meatball landjaeger hamburger
-meatloaf t-bone cupim. Tongue jerky tri-tip jowl. Filet mignon shoulder
-fatback, cow jerky kielbasa pork chop frankfurter short ribs beef ribs
-t-bone pork jowl. Flank drumstick rump andouille tri-tip pork belly pig
-meatloaf strip steak fatback chicken. Boudin pork loin turkey, doner
-leberkas pastrami shoulder pork beef ribs meatball andouille bresaola
-turducken.</p>
+<p>Bacon ipsum dolor amet jowl brisket short ribs, hamburger flank
+kielbasa rump porchetta spare ribs chislic filet mignon pork belly ham
+corned beef. Pancetta spare ribs alcatra flank. Pork jowl pastrami
+porchetta, burgdoggen leberkas kevin ham kielbasa. Strip steak cow short
+loin kevin pastrami meatloaf. Swine cupim kielbasa spare ribs tail bacon
+shoulder filet mignon pig.</p>
 <p><strong>HIPSTER:</strong></p>
-<p>I’m baby sriracha forage cornhole man bun whatever selvage live-edge
-yes plz pour-over. Ethical pabst marxism 8-bit squid, sustainable shaman
-flexitarian farm-to-table. Same vape raw denim tofu listicle. Succulents
-meh pug, iceland bespoke hell of pinterest skateboard knausgaard. Fit
-health goth bespoke, venmo next level woke bodega boys meditation ugh
-mustache locavore lo-fi.</p>
+<p>I’m baby quinoa lyft gorpcore hoodie schlitz yuccie bitters helvetica
+praxis. Same pour-over aesthetic shaman cray 8-bit. Echo park stumptown
+vegan raclette sustainable live-edge health goth DIY offal. Semiotics
+plaid stumptown, mlkshk vaporware poutine heirloom. Williamsburg irony
+cronut austin.</p>
 </details><p><br></p>
+</div>
+<div class="section level2">
+<h2 id="rick-and-morty-quotes-loremricksum">Rick and Morty Quotes: Loremricksum<a class="anchor" aria-label="anchor" href="#rick-and-morty-quotes-loremricksum"></a>
+</h2>
+<p>The <code><a href="../reference/loremricksum.html">loremricksum()</a></code> function returns paragraphs of random
+quotes from the adult animated comedy, Rick &amp; Morty. Note that the
+output from this may contain obscenities, so is not reproduced here.</p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">example_rick</span> <span class="op">&lt;-</span></span>
+<span>  <span class="fu"><a href="../reference/loremricksum.html">loremricksum</a></span><span class="op">(</span>n_paras <span class="op">=</span> <span class="fl">2L</span>,</span>
+<span>               n_sentences <span class="op">=</span> <span class="fl">4L</span><span class="op">)</span></span></code></pre></div>
 </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside>
