@@ -87,7 +87,7 @@
 <!-- badges: start -->
 
 <p>The goal of lipsum is to get easy access to several “Lorem Ipsum” web APIs to simply generate customisable placeholder text. In the R world, this will most likely commonly be used within RMarkdown/Quarto documents and Shiny apps.</p>
-<p>The <a href="https://github.com/gadenbuie/lorem" class="external-link">lorem</a> package also serves a similar purpose, but <a href="https://github.com/jack-davison/lipsum" class="external-link">lipsum</a>’s interfacing with a variety of APIs may allow for more flexible placeholder outputs. For example, the <code><a href="reference/loripsum.html">loripsum()</a></code> function gives a lot of control of the kinds of features the placeholder text should have (for example, lists, links, headers, and so on).</p>
+<p>The <a href="https://github.com/gadenbuie/lorem" class="external-link">lorem</a> package also serves a similar purpose, but <a href="https://github.com/jack-davison/lipsum" class="external-link">lipsum</a>’s interfacing with a variety of APIs may allow for more flexible placeholder outputs. For example, the <code>loripsum()</code> function gives a lot of control of the kinds of features the placeholder text should have (for example, lists, links, headers, and so on).</p>
 <p><a href="https://github.com/jack-davison/lipsum" class="external-link">lipsum</a> owes a lot to the <a href="https://github.com/templeman/awesome-ipsum" class="external-link">awesome-ipsum</a> list, and uses its same categorisations:</p>
 <ul>
 <li><p><strong>Practical</strong>, which are placeholder generators that are most useful for “professional” settings. These either generate text in Latin, or business-sounding text like newspaper articles.</p></li>
@@ -106,7 +106,7 @@
 </h2>
 <p>The below code generates example lorem ipsum generated using the <a href="https://loripsum.net" class="external-link">loripsum API</a>. This is the most useful, customisable function in the package, and is probably most appropriate for professional use.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">ipsum</span> <span class="op">&lt;-</span> <span class="fu">lipsum</span><span class="fu">::</span><span class="fu"><a href="reference/loripsum.html">loripsum</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">3</span>, decorate <span class="op">=</span> <span class="cn">TRUE</span>, ol <span class="op">=</span> <span class="cn">TRUE</span>, bq <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">ipsum</span> <span class="op">&lt;-</span> <span class="fu">lipsum</span><span class="fu">::</span><span class="fu">loripsum</span><span class="op">(</span>n <span class="op">=</span> <span class="fl">3</span>, decorate <span class="op">=</span> <span class="cn">TRUE</span>, ol <span class="op">=</span> <span class="cn">TRUE</span>, bq <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
 <p>In R, the output looks like this:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="va">ipsum</span><span class="op">)</span></span>

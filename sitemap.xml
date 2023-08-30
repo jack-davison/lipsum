@@ -25,39 +25,39 @@
     <loc>https://jack-davison.github.io/lipsum/news/index.html</loc>
   </url>
   <url>
-    <loc>https://jack-davison.github.io/lipsum/reference/baconipsum.html</loc>
-  </url>
-  <url>
-    <loc>https://jack-davison.github.io/lipsum/reference/corporatelorem.html</loc>
-  </url>
-  <url>
-    <loc>https://jack-davison.github.io/lipsum/reference/devlorem.html</loc>
-  </url>
-  <url>
-    <loc>https://jack-davison.github.io/lipsum/reference/dinoipsum.html</loc>
-  </url>
-  <url>
-    <loc>https://jack-davison.github.io/lipsum/reference/hipsteripsum.html</loc>
-  </url>
-  <url>
     <loc>https://jack-davison.github.io/lipsum/reference/index.html</loc>
   </url>
   <url>
-    <loc>https://jack-davison.github.io/lipsum/reference/litipsum.html</loc>
+    <loc>https://jack-davison.github.io/lipsum/reference/lipsum_actor.html</loc>
   </url>
   <url>
-    <loc>https://jack-davison.github.io/lipsum/reference/loremricksum.html</loc>
+    <loc>https://jack-davison.github.io/lipsum/reference/lipsum_bacon.html</loc>
   </url>
   <url>
-    <loc>https://jack-davison.github.io/lipsum/reference/loripsum.html</loc>
+    <loc>https://jack-davison.github.io/lipsum/reference/lipsum_corporate.html</loc>
   </url>
   <url>
-    <loc>https://jack-davison.github.io/lipsum/reference/markdownum.html</loc>
+    <loc>https://jack-davison.github.io/lipsum/reference/lipsum_dino.html</loc>
   </url>
   <url>
-    <loc>https://jack-davison.github.io/lipsum/reference/metaphorpsum.html</loc>
+    <loc>https://jack-davison.github.io/lipsum/reference/lipsum_hipster.html</loc>
   </url>
   <url>
-    <loc>https://jack-davison.github.io/lipsum/reference/seazon.html</loc>
+    <loc>https://jack-davison.github.io/lipsum/reference/lipsum_literature.html</loc>
+  </url>
+  <url>
+    <loc>https://jack-davison.github.io/lipsum/reference/lipsum_loripsum.html</loc>
+  </url>
+  <url>
+    <loc>https://jack-davison.github.io/lipsum/reference/lipsum_markdown.html</loc>
+  </url>
+  <url>
+    <loc>https://jack-davison.github.io/lipsum/reference/lipsum_metaphor.html</loc>
+  </url>
+  <url>
+    <loc>https://jack-davison.github.io/lipsum/reference/lipsum_rick.html</loc>
+  </url>
+  <url>
+    <loc>https://jack-davison.github.io/lipsum/reference/lipsum_seazon.html</loc>
   </url>
 </urlset>

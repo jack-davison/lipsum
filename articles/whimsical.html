@@ -93,14 +93,14 @@
 <div class="section level2">
 <h2 id="classic-literature-litipsum">Classic Literature: Litipsum<a class="anchor" aria-label="anchor" href="#classic-literature-litipsum"></a>
 </h2>
-<p>The <code><a href="../reference/litipsum.html">litipsum()</a></code> function is not really as “silly” as the
-other whimsical ipsum generators; it grabs excerpts from public domain
-classic literature like Sherlock Holmes, Dracula, and so on. Users can
-opt into paragraph and list tags, but don’t expect any more complicated
-elements than that.</p>
+<p>The <code><a href="../reference/lipsum_literature.html">lipsum_literature()</a></code> function is not really as
+“silly” as the other whimsical ipsum generators; it grabs excerpts from
+public domain classic literature like Sherlock Holmes, Dracula, and so
+on. Users can opt into paragraph and list tags, but don’t expect any
+more complicated elements than that.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">example_lit</span> <span class="op">&lt;-</span></span>
-<span>  <span class="fu"><a href="../reference/litipsum.html">litipsum</a></span><span class="op">(</span></span>
+<span>  <span class="fu"><a href="../reference/lipsum_literature.html">lipsum_literature</a></span><span class="op">(</span></span>
 <span>    n <span class="op">=</span> <span class="fl">3L</span>,</span>
 <span>    tag <span class="op">=</span> <span class="st">"p"</span>, <span class="co"># add p tags</span></span>
 <span>    source <span class="op">=</span> <span class="st">"dracula"</span></span>
@@ -108,138 +108,161 @@ elements than that.</p>
 <details><summary>
 View Output
 </summary><p>
-“He has all along, since his coming, been trying his power, slowly but
-surely; that big child-brain of his is working. Well for us, it is, as
-yet, a child-brain; for had he dared, at the first, to attempt certain
-things he would long ago have been beyond our power. However, he means
-to succeed, and a man who has centuries before him can afford to wait
-and to go slow. Festina lente may well be his motto.”
+Then with swiftness, but with absolute method, Van Helsing performed the
+operation. As the transfusion went on something like life seemed to come
+back to poor Lucy’s cheeks, and through Arthur’s growing pallor the joy
+of his face seemed absolutely to shine. After a bit I began to grow
+anxious, for the loss of blood was telling on Arthur, strong man as he
+was. It gave me an idea of what a terrible strain Lucy’s system must
+have undergone that what weakened Arthur only partially restored her.
+But the Professor’s face was set, and he stood watch in hand and with
+his eyes fixed now on the patient and now on Arthur. I could hear my own
+heart beat. Presently he said in a soft voice: “Do not stir an instant.
+It is enough. You attend him; I will look to her.” When all was over I
+could see how much Arthur was weakened. I dressed the wound and took his
+arm to bring him away, when Van Helsing spoke without turning round–the
+man seems to have eyes in the back of his head:–
 </p>
 <p>
-“I fail to understand,” said Harker wearily. “Oh, do be more plain to
-me! Perhaps grief and trouble are dulling my brain.”
+“The brave lover, I think, deserve another kiss, which he shall have
+presently.” And as he had now finished his operation, he adjusted the
+pillow to the patient’s head. As he did so the narrow black velvet band
+which she seems always to wear round her throat, buckled with an old
+diamond buckle which her lover had given her, was dragged a little up,
+and showed a red mark on her throat. Arthur did not notice it, but I
+could hear the deep hiss of indrawn breath which is one of Van Helsing’s
+ways of betraying emotion. He said nothing at the moment, but turned to
+me, saying: “Now take down our brave young lover, give him of the port
+wine, and let him lie down a while. He must then go home and rest, sleep
+much and eat much, that he may be recruited of what he has so given to
+his love. He must not stay here. Hold! a moment. I may take it, sir,
+that you are anxious of result. Then bring it with you that in all ways
+the operation is successful. You have saved her life this time, and you
+can go home and rest easy in mind that all that can be is. I shall tell
+her all when she is well; she shall love you none the less for what you
+have done. Good-bye.”
 </p>
 <p>
-The Professor laid his hand tenderly on his shoulder as he spoke:–
+When Arthur had gone I went back to the room. Lucy was sleeping gently,
+but her breathing was stronger; I could see the counterpane move as her
+breast heaved. By the bedside sat Van Helsing, looking at her intently.
+The velvet band again covered the red mark. I asked the Professor in a
+whisper:–
 </p>
 </details><p><br></p>
 </div>
 <div class="section level2">
 <h2 id="celebrity-imppersonations-devlorem">Celebrity Imppersonations: DevLorem<a class="anchor" aria-label="anchor" href="#celebrity-imppersonations-devlorem"></a>
 </h2>
-<p><code><a href="../reference/devlorem.html">devlorem()</a></code> gives very little control over its output.
-However, the output is pretty fun - it gives a few paragraphs
+<p><code><a href="../reference/lipsum_actor.html">lipsum_actor()</a></code> gives very little control over its
+output. However, the output is pretty fun - it gives a few paragraphs
 impersonating a famous actor or pop culture icon.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">example_dev</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/devlorem.html">devlorem</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">5L</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">example_dev</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/lipsum_actor.html">lipsum_actor</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">5L</span><span class="op">)</span></span></code></pre></div>
 <details><summary>
 View Output
-</summary><p>Samuel L. Jackson I been saying that shit for years. And if you heard
-it, that meant your ass. I never gave much thought to what it meant. I
-just thought it was some cold-blooded shit to say to a motherfucker
-before I popped a cap in his ass. But I saw some shit this morning made
-me think twice. See, now I’m thinking, maybe it means you’re the evil
-man, and I’m the righteous man, and Mr. 9 Millimeter here? He’s the
-shepherd protecting my righteous ass in the valley of darkness. Or it
-could mean you’re the righteous man and I’m the shepherd and it’s the
-world that’s evil and selfish. Now I’d like that. But that shit ain’t
-the truth. The truth is…you’re the weak, and I am the tyranny of evil
-men. But I’m trying, Ringo. I’m trying real hard to be the shepherd.
-Ezekiel 25:17. “The path of the righteous man is beset on all sides by
-the iniquities of the selfish and the tyranny of evil men. Blessed is he
-who, in the name of charity and good will, shepherds the weak through
-the valley of darkness, for he is truly his brother’s keeper and the
-finder of lost children. And I will strike down upon thee with great
-vengeance and furious anger those who attempt to poison and destroy my
-brothers. And you will know I am the Lord when I lay my vengeance upon
-you.” And I will strike down upon thee with great vengeance and furious
-anger those who would attempt to poison and destroy my brothers. And you
-will know my name is the Lord when I lay my vengeance upon thee. You
-think water moves fast? You should see ice. It moves like it has a mind.
-Like it knows it killed the world once and got a taste for murder. After
-the avalanche, it took us a week to climb out. Now we took an oath, that
-I’m breaking now. We said we’d say it was the snow that killed the other
-two, but it wasn’t. Nature is lethal but it doesn’t hold a candle to
-man. Do you see any Teletubbies in here? Do you see a slender plastic
-tag clipped to my shirt with my name printed on it? Did you see a little
-Asian child with a blank expression sitting outside in a mechanical
-helicopter that shakes when you put quarters in it?</p>
+</summary><p>HP Lovecraft The most merciful thing in the world, I think, is the
+inability of the human mind to correlate all its contents. We live on a
+placid island of ignorance in the midst of black seas of the infinity,
+and it was not meant that we should voyage far. Contrary to what you may
+assume, I am not a pessimist but an indifferentist- that is, I don’t
+make the mistake of thinking that the… cosmos… gives a damn one way or
+the other about the especial wants and ultimate welfare of mosquitoes,
+rats, lice, dogs, men, horses, pterodactyls, trees, fungi, dodos, or
+other forms of biological energy. There are not many persons who know
+what wonders are opened to them in the stories and visions of their
+youth; for when as children we learn and dream, we think but half-formed
+thoughts, and when as men we try to remember, we are dulled and prosaic
+with the poison of life. But some of us awake in the night with strange
+phantasms of enchanted hills and gardens, of fountains that sing in the
+sun, of golden cliffs overhanging murmuring seas, of plains that stretch
+down to sleeping cities of bronze and stone, and of shadowy companies of
+heroes that ride caparisoned white horses along the edges of thick
+forests; and then we know that we have looked back through the ivory
+gates into that world of wonder which was ours before we were wise and
+unhappy. At night, when the objective world has slunk back into its
+cavern and left dreamers to their own, there come inspirations and
+capabilities impossible at any less magical and quiet hour. No one knows
+whether or not he is a writer unless he has tried writing at night. To
+be bitter is to attribute intent and personality to the formless,
+infinite, unchanging and unchangeable void. We drift on a chartless,
+resistless sea. Let us sing when we can, and forget the rest..</p>
 </details><p><br></p>
 </div>
 <div class="section level2">
 <h2 id="silly-metaphors-metaphorpsum">Silly Metaphors: Metaphorpsum<a class="anchor" aria-label="anchor" href="#silly-metaphors-metaphorpsum"></a>
 </h2>
-<p>The <code><a href="../reference/metaphorpsum.html">metaphorpsum()</a></code> function comes up with confusing
+<p>The <code>example_metaphor()</code> function comes up with confusing
 metaphors. At a glance they read like English, but if readers dare look
 closer they’ll see they’re pretty nonsensical.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">example_metaphor</span> <span class="op">&lt;-</span></span>
-<span>  <span class="fu"><a href="../reference/metaphorpsum.html">metaphorpsum</a></span><span class="op">(</span></span>
+<span>  <span class="fu"><a href="../reference/lipsum_metaphor.html">lipsum_metaphor</a></span><span class="op">(</span></span>
 <span>    n_paras <span class="op">=</span> <span class="fl">2L</span>,</span>
 <span>    n_sentences <span class="op">=</span> <span class="fl">4L</span>,</span>
 <span>    p <span class="op">=</span> <span class="cn">FALSE</span></span>
 <span>  <span class="op">)</span> <span class="co"># use p tags?</span></span></code></pre></div>
 <details><summary>
 View Output
-</summary><p>A draw of the spoon is assumed to be an upraised fortnight. In recent
-years, some vaulted tops are thought of simply as fridges. Authors often
-misinterpret the pig as a trochal break, when in actuality it feels more
-like a distilled garden. A box can hardly be considered a foughten
-basement without also being a debt.</p>
-An iron is a croissant’s mayonnaise. Unfortunately, that is wrong; on
-the contrary, the daisies could be said to resemble jesting pastas. We
-know that those half-brothers are nothing more than quilts. As far as we
-can estimate, a badger can hardly be considered a trinal trade without
-also being a sousaphone.
+</summary><p>Some posit the azure sociology to be less than unribbed. A leisured
+taurus’s veterinarian comes with it the thought that the drifty squash
+is an aftershave. A fan is a flag’s thrill. Recent controversy aside,
+one cannot separate dolphins from dropping fingers.</p>
+A pendant pendulum’s eight comes with it the thought that the fitted
+beast is a philosophy. What we don’t know for sure is whether or not a
+hexagon of the quail is assumed to be a spleeny cement. Though we assume
+the latter, an orphan button’s restaurant comes with it the thought that
+the betrothed question is a secretary. The literature would have us
+believe that a matin geography is not but a find.
 </details><p><br></p>
 </div>
 <div class="section level2">
 <h2 id="dinosaur-names-dinoipsum">Dinosaur Names: Dinoipsum<a class="anchor" aria-label="anchor" href="#dinosaur-names-dinoipsum"></a>
 </h2>
-<p>The <code><a href="../reference/dinoipsum.html">dinoipsum()</a></code> function takes inspiration from the
+<p>The <code><a href="../reference/lipsum_dino.html">lipsum_dino()</a></code> function takes inspiration from the
 classic Lorem Ipsum in that it creates paragaphs of non-English text.
 However, instead of Latin, it fills the paragraphs with dinosaur names
 instead!</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">example_dino</span> <span class="op">&lt;-</span></span>
-<span>  <span class="fu"><a href="../reference/dinoipsum.html">dinoipsum</a></span><span class="op">(</span></span>
+<span>  <span class="fu"><a href="../reference/lipsum_dino.html">lipsum_dino</a></span><span class="op">(</span></span>
 <span>    n_paras <span class="op">=</span> <span class="fl">5L</span>,</span>
 <span>    n_words <span class="op">=</span> <span class="fl">15L</span></span>
 <span>  <span class="op">)</span></span></code></pre></div>
 <details><summary>
 View Output
-</summary><p>Similicaudipteryx Siamodon Loricosaurus Koreaceratops Canardia
-Camarasaurus Wulagasaurus Jintasaurus Texasetes Titanoceratops
-Nebulasaurus Datousaurus Gilmoreosaurus Variraptor Amygdalodon.</p>
-<p>Brontomerus Brachiosaurus Dianchungosaurus Dacentrurus Dracoraptor
-Equijubus Embasaurus Acrocanthosaurus Lewisuchus Neosaurus Gspsaurus
-Indosaurus Brachylophosaurus Lamaceratops Adeopapposaurus.</p>
-<p>Ceratonykus Narambuenatitan Dysalotosaurus Lisboasaurus
-Sulaimanisaurus Brachyrophus Galtonia Arctosaurus Galeamopus Claosaurus
-Stokesosaurus Basutodon Turiasaurus Bakesaurus Fulengia.</p>
-<p>Cryptosaurus Yizhousaurus Tatankaceratops Saurophagus Alcovasaurus
-Orinosaurus Orkoraptor Dynamosaurus Dolichosuchus Texasetes
-Dianchungosaurus Mochlodon Stegosaurus Pukyongosaurus Tianyulong.</p>
-<p>Atsinganosaurus Borealopelta Albisaurus Yixianosaurus Rugocaudia
-Diracodon Spinostropheus Aristosuchus Comahuesaurus Kileskus Antrodemus
-Xingxiulong Dicraeosaurus Sonidosaurus Jinfengopteryx.</p>
+</summary><p>Adelolophus Olorotitan Macelognathus Lucianovenator Chindesaurus
+Australodocus Lusotitan Parasaurolophus Borealopelta Ornithomimus
+Homalocephale Nodosaurus Hypselospinus Arizonasaurus Ruyangosaurus.</p>
+<p>Coelosaurus Teinurosaurus Wamweracaudia Shantungosaurus Mei
+Lurdusaurus Anatotitan Nipponosaurus Fukuiraptor Aardonyx Asiaceratops
+Parrosaurus Anatotitan Anodontosaurus Gargoyleosaurus.</p>
+<p>Kritosaurus Kuszholia Amphicoelias Nambalia Itemirus Ruehleia
+Histriasaurus Dongyangopelta Kryptops Camarillasaurus Fruitadens
+Ankistrodon Dilophosaurus Anthodon Aetonyx.</p>
+<p>Lusotitan Dromaeosauroides Dongyangosaurus Orosaurus Levnesovia
+Chialingosaurus Maleevus Chienkosaurus Talenkauen Leyesaurus Trachodon
+Hierosaurus Sphenosaurus Borealopelta Ornithotarsus.</p>
+<p>Kazaklambia Dollodon Chiayusaurus Coronosaurus Bambiraptor Tornieria
+Liaoningosaurus Texacephale Einiosaurus Trialestes Zhuchengtyrannus
+Vahiny Koreanosaurus Nasutoceratops Trinisaura.</p>
 </details><p><br></p>
 </div>
 <div class="section level2">
 <h2 id="random-words-bacon-hipsters">Random Words: Bacon &amp; Hipsters<a class="anchor" aria-label="anchor" href="#random-words-bacon-hipsters"></a>
 </h2>
-<p><code><a href="../reference/baconipsum.html">baconipsum()</a></code> and <code><a href="../reference/hipsteripsum.html">hipsteripsum()</a></code> are very
-similar in that their options are identical and simply (partly) replace
-the random Latin of lorem ipsum with meat words and hipster-y phrases,
-respectively.</p>
+<p><code><a href="../reference/lipsum_bacon.html">lipsum_bacon()</a></code> and <code><a href="../reference/lipsum_hipster.html">lipsum_hipster()</a></code> are
+very similar in that their options are identical and simply (partly)
+replace the random Latin of lorem ipsum with meat words and hipster-y
+phrases, respectively.</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">example_meat</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/baconipsum.html">baconipsum</a></span><span class="op">(</span></span>
+<code class="sourceCode R"><span><span class="va">example_meat</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/lipsum_bacon.html">lipsum_bacon</a></span><span class="op">(</span></span>
 <span>  n_sentences <span class="op">=</span> <span class="fl">5L</span>,</span>
 <span>  type <span class="op">=</span> <span class="st">"all-meat"</span>,</span>
 <span>  start_with_lorem <span class="op">=</span> <span class="cn">TRUE</span></span>
 <span><span class="op">)</span></span>
 <span></span>
-<span><span class="va">example_hipster</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/hipsteripsum.html">hipsteripsum</a></span><span class="op">(</span></span>
+<span><span class="va">example_hipster</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/lipsum_hipster.html">lipsum_hipster</a></span><span class="op">(</span></span>
 <span>  n_sentences <span class="op">=</span> <span class="fl">5L</span>,</span>
 <span>  type <span class="op">=</span> <span class="st">"hipster-centric"</span>,</span>
 <span>  start_with_lorem <span class="op">=</span> <span class="cn">TRUE</span></span>
@@ -247,30 +270,30 @@ respectively.</p>
 <details><summary>
 View Output
 </summary><p><strong>MEAT:</strong></p>
-<p>Bacon ipsum dolor amet ribeye flank kielbasa filet mignon bresaola.
-Meatball tri-tip hamburger pork loin chicken chuck swine pig pork flank.
-Turkey jerky tail corned beef. Shankle prosciutto doner, venison
-leberkas ball tip tenderloin tongue pork loin frankfurter pork chop
-swine picanha. Pancetta sausage landjaeger, t-bone meatball rump pork
-ribeye short loin frankfurter.</p>
+<p>Bacon ipsum dolor amet meatball pastrami landjaeger shankle, doner
+chicken ribeye. Ham burgdoggen swine brisket pork shankle flank meatball
+hamburger cow sausage pig beef ribs. Tenderloin ball tip meatball,
+sirloin chicken spare ribs bacon picanha. Drumstick picanha alcatra
+bresaola shankle cupim frankfurter turkey swine chislic flank tri-tip
+doner. Corned beef short ribs sausage boudin.</p>
 <p><strong>HIPSTER:</strong></p>
-<p>I’m baby sustainable godard jean shorts skateboard tbh mustache
-squid. Etsy cloud bread wayfarers, microdosing church-key kogi neutra
-poutine mukbang kale chips biodiesel marfa chambray. Ascot semiotics
-prism lyft. Cliche four dollar toast messenger bag, sus swag food truck
-palo santo etsy DSA kinfolk occupy. Pinterest forage chambray blog, cred
-wayfarers narwhal wolf adaptogen everyday carry.</p>
+<p>I’m baby taxidermy post-ironic intelligentsia, bitters next level
+vice ennui raw denim disrupt YOLO. Bitters heirloom salvia post-ironic
+yr ascot authentic 3 wolf moon swag gatekeep deep v. Mumblecore
+activated charcoal retro yr knausgaard. Fit keffiyeh cloud bread,
+tattooed kale chips cornhole semiotics. 8-bit normcore typewriter put a
+bird on it four loko.</p>
 </details><p><br></p>
 </div>
 <div class="section level2">
 <h2 id="rick-and-morty-quotes-loremricksum">Rick and Morty Quotes: Loremricksum<a class="anchor" aria-label="anchor" href="#rick-and-morty-quotes-loremricksum"></a>
 </h2>
-<p>The <code><a href="../reference/loremricksum.html">loremricksum()</a></code> function returns paragraphs of random
+<p>The <code><a href="../reference/lipsum_rick.html">lipsum_rick()</a></code> function returns paragraphs of random
 quotes from the adult animated comedy, Rick &amp; Morty. Note that the
 output from this may contain obscenities, so is not reproduced here.</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">example_rick</span> <span class="op">&lt;-</span></span>
-<span>  <span class="fu"><a href="../reference/loremricksum.html">loremricksum</a></span><span class="op">(</span></span>
+<span>  <span class="fu"><a href="../reference/lipsum_rick.html">lipsum_rick</a></span><span class="op">(</span></span>
 <span>    n_paras <span class="op">=</span> <span class="fl">2L</span>,</span>
 <span>    n_sentences <span class="op">=</span> <span class="fl">4L</span></span>
 <span>  <span class="op">)</span></span></code></pre></div>
