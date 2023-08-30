@@ -17,4 +17,3 @@ devlorem <- function(n = 5L, paragraphs = TRUE) {
   raw <- httr::GET(url)
   rawToChar(raw$content)
 }
-

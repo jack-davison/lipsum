@@ -24,9 +24,11 @@ The `litipsum()` function is not really as "silly" as the other whimsical ipsum 
 
 ```{r litipsum}
 example_lit <-
-  litipsum(n = 3L,
-           tag = "p", # add p tags
-           source = "dracula") # take from dracula
+  litipsum(
+    n = 3L,
+    tag = "p", # add p tags
+    source = "dracula"
+  ) # take from dracula
 ```
 
 <details>
@@ -56,9 +58,11 @@ The `metaphorpsum()` function comes up with confusing metaphors. At a glance the
 
 ```{r metaphor}
 example_metaphor <-
-  metaphorpsum(n_paras = 2L,
-               n_sentences = 4L,
-               p = FALSE) # use p tags?
+  metaphorpsum(
+    n_paras = 2L,
+    n_sentences = 4L,
+    p = FALSE
+  ) # use p tags?
 ```
 
 <details>
@@ -73,8 +77,10 @@ The `dinoipsum()` function takes inspiration from the classic Lorem Ipsum in tha
 
 ```{r dinos}
 example_dino <-
-  dinoipsum(n_paras = 5L,
-            n_words = 15L)
+  dinoipsum(
+    n_paras = 5L,
+    n_words = 15L
+  )
 ```
 
 <details>
@@ -88,13 +94,17 @@ example_dino <-
 `baconipsum()` and `hipsteripsum()` are very similar in that their options are identical and simply (partly) replace the random Latin of lorem ipsum with meat words and hipster-y phrases, respectively.  
 
 ```{r random}
-example_meat <- baconipsum(n_sentences = 5L,
-                           type = "all-meat",
-                           start_with_lorem = TRUE)
+example_meat <- baconipsum(
+  n_sentences = 5L,
+  type = "all-meat",
+  start_with_lorem = TRUE
+)
 
-example_hipster <- hipsteripsum(n_sentences = 5L,
-                                type = "hipster-centric",
-                                start_with_lorem = TRUE)
+example_hipster <- hipsteripsum(
+  n_sentences = 5L,
+  type = "hipster-centric",
+  start_with_lorem = TRUE
+)
 ```
 
 <details>
@@ -117,6 +127,8 @@ The `loremricksum()` function returns paragraphs of random quotes from the adult
 
 ```{r rick}
 example_rick <-
-  loremricksum(n_paras = 2L,
-               n_sentences = 4L)
+  loremricksum(
+    n_paras = 2L,
+    n_sentences = 4L
+  )
 ```
