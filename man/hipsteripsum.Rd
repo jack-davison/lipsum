@@ -32,6 +32,7 @@ Generates pretentious placeholder text. You wouldn't understand, man!
 \seealso{
 Other whimsical generators: 
 \code{\link{baconipsum}()},
-\code{\link{litipsum}()}
+\code{\link{litipsum}()},
+\code{\link{metaphorpsum}()}
 }
 \concept{whimsical generators}
