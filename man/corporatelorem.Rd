@@ -22,6 +22,7 @@ the NY Times, The Guardian and The Verge.
 \seealso{
 Other practical generators: 
 \code{\link{loripsum}()},
-\code{\link{markdownum}()}
+\code{\link{markdownum}()},
+\code{\link{seazon}()}
 }
 \concept{practical generators}

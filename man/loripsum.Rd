@@ -58,6 +58,7 @@ API.
 \seealso{
 Other practical generators: 
 \code{\link{corporatelorem}()},
-\code{\link{markdownum}()}
+\code{\link{markdownum}()},
+\code{\link{seazon}()}
 }
 \concept{practical generators}

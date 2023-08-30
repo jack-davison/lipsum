@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 library(lipsum)
 ```
 
-# Customisable Lorem Ipsum: Loripsum
+# Lorem Ipsum with various HTML tags: Loripsum
 
 The `loripsum()` function is probably the best go-to place holder text API in the package, and provides the most control over the output as far as contents are concerned.
 
@@ -45,6 +45,40 @@ example_loripsum <-
 `r example_loripsum`
 </details>
 <br>
+
+# Customisable Random Lorem Ipsum: Seazon.org
+
+The Seazon API contains fewer HTML tags than Loripsum, but is similarly very customisable. A unique feature is allowing users to define a *range* of letters, words and paragraphs, which may lead to more variable outputs than other lorem generators.
+
+```{r seazon}
+example_seazon <-
+  seazon(
+    # features
+    latin = TRUE,
+    start_with_lorem = TRUE,
+    use_periods = TRUE,
+    use_sentence_case = TRUE,
+    p = TRUE,
+    use_double_spaces = FALSE,
+    # refine latin = FALSE
+    random_numbers = FALSE,
+    random_latin = TRUE,
+    # sentence structure
+    min_letters = 2L,
+    max_letters = 9L,
+    min_words = 45L,
+    max_words = 85L,
+    min_paras = 3L,
+    max_paras = 4L
+  )
+```
+
+<details>
+<summary> View Output </summary>
+`r example_seazon`
+</details>
+<br>
+
 
 # Markdown-formatted: Lorem Markdownum
 

@@ -56,6 +56,7 @@ Generates customisable placeholder text using the Lorem Markdownum API, formatte
 \seealso{
 Other practical generators: 
 \code{\link{corporatelorem}()},
-\code{\link{loripsum}()}
+\code{\link{loripsum}()},
+\code{\link{seazon}()}
 }
 \concept{practical generators}

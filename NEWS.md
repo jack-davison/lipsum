@@ -1,6 +1,6 @@
 # lipsum (development version)
 
-* Added 3 practical lorem ipsum generators.
+* Added 4 practical lorem ipsum generators.
 
 * Added several whimsical lorem ipsum generators.
 
