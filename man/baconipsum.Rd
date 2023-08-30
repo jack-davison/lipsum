@@ -32,6 +32,7 @@ Ipsum, but is actually meat-related words.
 }
 \seealso{
 Other whimsical generators: 
+\code{\link{hipsteripsum}()},
 \code{\link{litipsum}()}
 }
 \concept{whimsical generators}

@@ -2,6 +2,7 @@
 
 export(baconipsum)
 export(corporatelorem)
+export(hipsteripsum)
 export(litipsum)
 export(loripsum)
 export(markdownum)

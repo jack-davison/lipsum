@@ -26,6 +26,7 @@ Choose passages from copyright-free literature courtesy of the \href{http://www.
 }
 \seealso{
 Other whimsical generators: 
-\code{\link{baconipsum}()}
+\code{\link{baconipsum}()},
+\code{\link{hipsteripsum}()}
 }
 \concept{whimsical generators}
