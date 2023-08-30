@@ -3,6 +3,7 @@
 export(baconipsum)
 export(corporatelorem)
 export(devlorem)
+export(dinoipsum)
 export(hipsteripsum)
 export(litipsum)
 export(loremricksum)

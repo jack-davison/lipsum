@@ -33,6 +33,7 @@ Generates pretentious placeholder text. You wouldn't understand, man!
 Other whimsical generators: 
 \code{\link{baconipsum}()},
 \code{\link{devlorem}()},
+\code{\link{dinoipsum}()},
 \code{\link{litipsum}()},
 \code{\link{loremricksum}()},
 \code{\link{metaphorpsum}()}

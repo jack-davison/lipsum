@@ -24,6 +24,7 @@ Generates place holder text of nonsensical metaphors.
 Other whimsical generators: 
 \code{\link{baconipsum}()},
 \code{\link{devlorem}()},
+\code{\link{dinoipsum}()},
 \code{\link{hipsteripsum}()},
 \code{\link{litipsum}()},
 \code{\link{loremricksum}()}

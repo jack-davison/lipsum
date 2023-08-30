@@ -28,6 +28,7 @@ Choose passages from copyright-free literature courtesy of the \href{http://www.
 Other whimsical generators: 
 \code{\link{baconipsum}()},
 \code{\link{devlorem}()},
+\code{\link{dinoipsum}()},
 \code{\link{hipsteripsum}()},
 \code{\link{loremricksum}()},
 \code{\link{metaphorpsum}()}

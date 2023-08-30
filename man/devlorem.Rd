@@ -21,6 +21,7 @@ Morgan Freeman.
 \seealso{
 Other whimsical generators: 
 \code{\link{baconipsum}()},
+\code{\link{dinoipsum}()},
 \code{\link{hipsteripsum}()},
 \code{\link{litipsum}()},
 \code{\link{loremricksum}()},

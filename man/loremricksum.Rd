@@ -23,6 +23,7 @@ contain obscenities.
 Other whimsical generators: 
 \code{\link{baconipsum}()},
 \code{\link{devlorem}()},
+\code{\link{dinoipsum}()},
 \code{\link{hipsteripsum}()},
 \code{\link{litipsum}()},
 \code{\link{metaphorpsum}()}

@@ -33,6 +33,7 @@ Ipsum, but is actually meat-related words.
 \seealso{
 Other whimsical generators: 
 \code{\link{devlorem}()},
+\code{\link{dinoipsum}()},
 \code{\link{hipsteripsum}()},
 \code{\link{litipsum}()},
 \code{\link{loremricksum}()},
