@@ -2,7 +2,7 @@
 title: "Whimsical Placeholders"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Practical Placeholders}
+  %\VignetteIndexEntry{Whimsical Placeholders}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
