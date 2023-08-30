@@ -24,4 +24,8 @@ placeholder text. One of adventures-sherlock-holmes, dr-jekyll-and-mr-hyde, drac
 \description{
 Choose passages from copyright-free literature courtesy of the \href{http://www.gutenberg.org/}{Gutenberg Project}.
 }
+\seealso{
+Other whimsical generators: 
+\code{\link{baconipsum}()}
+}
 \concept{whimsical generators}
