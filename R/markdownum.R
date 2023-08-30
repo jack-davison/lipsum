@@ -18,6 +18,7 @@
 #'
 #' @family practical generators
 #' @source <https://jaspervdj.be/lorem-markdownum/>
+#' @order 2
 #'
 #' @export
 markdownum <- function(n = 5L,

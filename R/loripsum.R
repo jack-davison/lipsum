@@ -20,6 +20,7 @@
 #'
 #' @family practical generators
 #' @source <https://loripsum.net/>
+#' @order 1
 #'
 #' @export
 loripsum <-
