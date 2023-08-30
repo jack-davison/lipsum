@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# lipsum
+# lipsum: access a variety of placeholder text APIs <a href="https://jack-davison.github.io/lipsum/"><img src="man/figures/logo.png" align="right" height="134" /></a>
 
 <!-- badges: start -->
 
@@ -57,26 +57,25 @@ In R, the output looks like this:
 
 ``` r
 cat(ipsum)
-#> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac tamen hic mallet non dolere. Ut aliquid scire se gaudeant? Eam stabilem appellas. Satis est ad hoc responsum. <b>Age sane, inquam.</b> Duo Reges: constructio interrete. </p>
+#> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc simile tandem est? Tenent mordicus. Beatum, inquit. Primum quid tu dicis breve? Re mihi non aeque satisfacit, et quidem locis pluribus. Magna laus. </p>
 #> 
-#> <p>Haec para/doca illi, nos admirabilia dicamus. Bork Apud ceteros autem philosophos, qui quaesivit aliquid, tacet; </p>
-#> 
-#> <blockquote cite='http://loripsum.net'>
-#>  Quamvis enim depravatae non sint, pravae tamen esse possunt.
-#> </blockquote>
-#> 
+#> <p>Ego vero isti, inquam, permitto. Omnia contraria, quos etiam insanos esse vultis. Istic sum, inquit. <b>Erat enim Polemonis.</b> Magna laus. Praeteritis, inquit, gaudeo. </p>
 #> 
 #> <ol>
-#>  <li>Quid est igitur, cur ita semper deum appellet Epicurus beatum et aeternum?</li>
-#>  <li>Tum Piso: Quoniam igitur aliquid omnes, quid Lucius noster?</li>
-#>  <li>Ille enim occurrentia nescio quae comminiscebatur;</li>
-#>  <li>Confecta res esset.</li>
-#>  <li>Omnia contraria, quos etiam insanos esse vultis.</li>
-#>  <li>Longum est enim ad omnia respondere, quae a te dicta sunt.</li>
+#>  <li>Quamquam non negatis nos intellegere quid sit voluptas, sed quid ille dicat.</li>
+#>  <li>Quod non faceret, si in voluptate summum bonum poneret.</li>
+#>  <li>Ne amores quidem sanctos a sapiente alienos esse arbitrantur.</li>
+#>  <li>Nos quidem Virtutes sic natae sumus, ut tibi serviremus, aliud negotii nihil habemus.</li>
+#>  <li>Multoque hoc melius nos veriusque quam Stoici.</li>
+#>  <li>Atque etiam valítudinem, vires, vacuitatem doloris non propter utilitatem solum, sed etiam ipsas propter se expetemus.</li>
 #> </ol>
 #> 
 #> 
-#> <p>Est, ut dicis, inquit; Quo plebiscito decreta a senatu est consuli quaestio Cn. Tu quidem reddes; Ita credo. </p>
+#> <p>Audeo dicere, inquit. Itaque hic ipse iam pridem est reiectus; Duo Reges: constructio interrete. Quis istum dolorem timet? Illa argumenta propria videamus, cur omnia sint paria peccata. </p>
+#> 
+#> <blockquote cite='http://loripsum.net'>
+#>  Dabit hoc Zenoni Polemo, etiam magister eius et tota illa gens et reliqui, qui virtutem omnibus rebus multo anteponentes adiungunt ei tamen aliquid summo in bono finiendo.
+#> </blockquote>
 ```
 
 Using GitHub markdown, this ends up looking like:
@@ -86,40 +85,45 @@ cat(ipsum)
 ```
 
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac tamen hic
-mallet non dolere. Ut aliquid scire se gaudeant? Eam stabilem appellas.
-Satis est ad hoc responsum. <b>Age sane, inquam.</b> Duo Reges:
-constructio interrete.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc simile
+tandem est? Tenent mordicus. Beatum, inquit. Primum quid tu dicis breve?
+Re mihi non aeque satisfacit, et quidem locis pluribus. Magna laus.
 </p>
 <p>
-Haec para/doca illi, nos admirabilia dicamus. Bork Apud ceteros autem
-philosophos, qui quaesivit aliquid, tacet;
+Ego vero isti, inquam, permitto. Omnia contraria, quos etiam insanos
+esse vultis. Istic sum, inquit. <b>Erat enim Polemonis.</b> Magna laus.
+Praeteritis, inquit, gaudeo.
 </p>
-<blockquote cite="http://loripsum.net">
-Quamvis enim depravatae non sint, pravae tamen esse possunt.
-</blockquote>
 <ol>
 <li>
-Quid est igitur, cur ita semper deum appellet Epicurus beatum et
-aeternum?
+Quamquam non negatis nos intellegere quid sit voluptas, sed quid ille
+dicat.
 </li>
 <li>
-Tum Piso: Quoniam igitur aliquid omnes, quid Lucius noster?
+Quod non faceret, si in voluptate summum bonum poneret.
 </li>
 <li>
-Ille enim occurrentia nescio quae comminiscebatur;
+Ne amores quidem sanctos a sapiente alienos esse arbitrantur.
 </li>
 <li>
-Confecta res esset.
+Nos quidem Virtutes sic natae sumus, ut tibi serviremus, aliud negotii
+nihil habemus.
 </li>
 <li>
-Omnia contraria, quos etiam insanos esse vultis.
+Multoque hoc melius nos veriusque quam Stoici.
 </li>
 <li>
-Longum est enim ad omnia respondere, quae a te dicta sunt.
+Atque etiam valítudinem, vires, vacuitatem doloris non propter
+utilitatem solum, sed etiam ipsas propter se expetemus.
 </li>
 </ol>
 <p>
-Est, ut dicis, inquit; Quo plebiscito decreta a senatu est consuli
-quaestio Cn. Tu quidem reddes; Ita credo.
+Audeo dicere, inquit. Itaque hic ipse iam pridem est reiectus; Duo
+Reges: constructio interrete. Quis istum dolorem timet? Illa argumenta
+propria videamus, cur omnia sint paria peccata.
 </p>
+<blockquote cite="http://loripsum.net">
+Dabit hoc Zenoni Polemo, etiam magister eius et tota illa gens et
+reliqui, qui virtutem omnibus rebus multo anteponentes adiungunt ei
+tamen aliquid summo in bono finiendo.
+</blockquote>

@@ -1,0 +1,81 @@
+---
+title: "Whimsical Placeholders"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Practical Placeholders}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(lipsum)
+```
+
+# Classic Literature: Litipsum
+
+The `litipsum()` function is not really as "silly" as the other whimsical ipsum generators; it grabs excerpts from public domain classic literature like Sherlock Holmes, Dracula, and so on. Users can opt into paragraph and list tags, but don't expect any more complicated elements than that. 
+
+```{r litipsum}
+example_lit <-
+  litipsum(n = 3L,
+           tag = "p", # add p tags
+           source = "dracula") # take from dracula
+```
+
+<details>
+<summary> View Output </summary>
+`r example_lit`
+</details>
+<br>
+
+# Silly Metaphors: Metaphorpsum
+
+The `metaphorpsum()` function comes up with confusing metaphors. At a glance they read like English, but if readers dare look closer they'll see they're pretty nonsensical.
+
+```{r}
+example_metaphor <-
+  metaphorpsum(n_paras = 2,
+               n_sentences = 4,
+               p = FALSE) # use p tags?
+```
+
+<details>
+<summary> View Output </summary>
+`r example_metaphor`
+</details>
+<br>
+
+# Random Words: Bacon & Hipsters
+
+`baconipsum()` and `hipsteripsum()` are very similar in that their options are identical and simply (partly) replace the random Latin of lorem ipsum with meat words and hipster-y phrases, respectively.  
+
+```{r}
+example_meat <- baconipsum(n_sentences = 5L,
+                           type = "all-meat",
+                           start_with_lorem = TRUE)
+
+example_hipster <- hipsteripsum(n_sentences = 5L,
+                                type = "hipster-centric",
+                                start_with_lorem = TRUE)
+```
+
+<details>
+<summary> View Output </summary>
+
+**MEAT:**
+
+`r example_meat`
+
+**HIPSTER:**
+
+`r example_hipster`
+
+</details>
+<br>

@@ -1,6 +1,7 @@
 url: https://jack-davison.github.io/lipsum/
 template:
   bootstrap: 5
+  bootswatch: journal
 reference:
 - title: Practical
   desc: Obtain latin or professional-sounding placeholder text. Best used in professional settings.

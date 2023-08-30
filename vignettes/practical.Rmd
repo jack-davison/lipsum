@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 library(lipsum)
 ```
 
-# Loripsum
+# Customisable Lorem Ipsum: Loripsum
 
 The `loripsum()` function is probably the best go-to place holder text API in the package, and provides the most control over the output as far as contents are concerned.
 
@@ -46,7 +46,7 @@ example_loripsum <-
 </details>
 <br>
 
-# Markdown
+# Markdown-formatted: Lorem Markdownum
 
 The Lorem Markdownum API is similar to the Loripsum API in terms of giving a lot of control over the output, but outputs the place holder text using markdown formatting.
 
@@ -79,7 +79,7 @@ example_markdown <-
 </details>
 <br>
 
-# Corporate
+# Random Corporate Articles: CorporateLorem
 
 CorporateLorem is very different from Loripsum in that users get exceedingly little control over the output. In fact, the only control one truly gets is the number of paragraphs returned. However, unlike other lorem ipsum generators, the user receives actual English prose from a variety of topics. This output may be a bit less distracting to colleagues/clients compared to random Latin phrases.
 

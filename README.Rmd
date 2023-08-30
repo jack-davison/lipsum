@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# lipsum
+# lipsum: access a variety of placeholder text APIs <a href="https://jack-davison.github.io/lipsum/"><img src="man/figures/logo.png" align="right" height="134" /></a>
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/jack-davison/lipsum/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jack-davison/lipsum/actions/workflows/R-CMD-check.yaml)
