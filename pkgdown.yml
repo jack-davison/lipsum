@@ -4,7 +4,7 @@ pkgdown_sha: ~
 articles:
   practical: practical.html
   whimsical: whimsical.html
-last_built: 2023-08-30T12:09Z
+last_built: 2023-08-30T12:42Z
 urls:
   reference: https://jack-davison.github.io/lipsum/reference
   article: https://jack-davison.github.io/lipsum/articles
