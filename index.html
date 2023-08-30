@@ -9,6 +9,12 @@
     Functionality includes both practical and whimsical text for many
     applications.">
 <title>Obtain Lorem Ipsum Text From Web APIs • lipsum</title>
+<!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
+<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="apple-touch-icon-60x60.png">
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.2.2/bootstrap.min.css" rel="stylesheet">
 <script src="deps/bootstrap-5.2.2/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
@@ -17,6 +23,7 @@
 <meta property="og:description" content="Quickly generate placeholder text using web APIs.
     Functionality includes both practical and whimsical text for many
     applications.">
+<meta property="og:image" content="https://jack-davison.github.io/lipsum/logo.png">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -30,7 +37,7 @@
     
     <a class="navbar-brand me-2" href="index.html">lipsum</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.3</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.4</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,6 +53,7 @@
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-articles">
     <a class="dropdown-item" href="articles/practical.html">Practical Placeholders</a>
+    <a class="dropdown-item" href="articles/whimsical.html">Whimsical Placeholders</a>
   </div>
 </li>
 <li class="nav-item">
@@ -71,8 +79,11 @@
 </nav><div class="container template-home">
 <div class="row">
   <main id="main" class="col-md-9"><div class="section level1">
-<div class="page-header"><h1 id="lipsum">lipsum<a class="anchor" aria-label="anchor" href="#lipsum"></a>
-</h1></div>
+<div class="page-header">
+<img src="logo.png" class="logo" alt=""><h1 id="lipsum-access-a-variety-of-placeholder-text-apis-">lipsum: access a variety of placeholder text APIs 
+<a class="anchor" aria-label="anchor" href="#lipsum-access-a-variety-of-placeholder-text-apis-"></a>
+</h1>
+</div>
 <!-- badges: start -->
 
 <p>The goal of lipsum is to get easy access to several “Lorem Ipsum” web APIs to simply generate customisable placeholder text. In the R world, this will most likely commonly be used within RMarkdown/Quarto documents and Shiny apps.</p>
@@ -99,61 +110,60 @@
 <p>In R, the output looks like this:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="va">ipsum</span><span class="op">)</span></span>
-<span><span class="co">#&gt; &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac tamen hic mallet non dolere. Ut aliquid scire se gaudeant? Eam stabilem appellas. Satis est ad hoc responsum. &lt;b&gt;Age sane, inquam.&lt;/b&gt; Duo Reges: constructio interrete. &lt;/p&gt;</span></span>
+<span><span class="co">#&gt; &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc simile tandem est? Tenent mordicus. Beatum, inquit. Primum quid tu dicis breve? Re mihi non aeque satisfacit, et quidem locis pluribus. Magna laus. &lt;/p&gt;</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; &lt;p&gt;Haec para/doca illi, nos admirabilia dicamus. Bork Apud ceteros autem philosophos, qui quaesivit aliquid, tacet; &lt;/p&gt;</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; &lt;blockquote cite='http://loripsum.net'&gt;</span></span>
-<span><span class="co">#&gt;  Quamvis enim depravatae non sint, pravae tamen esse possunt.</span></span>
-<span><span class="co">#&gt; &lt;/blockquote&gt;</span></span>
-<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; &lt;p&gt;Ego vero isti, inquam, permitto. Omnia contraria, quos etiam insanos esse vultis. Istic sum, inquit. &lt;b&gt;Erat enim Polemonis.&lt;/b&gt; Magna laus. Praeteritis, inquit, gaudeo. &lt;/p&gt;</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; &lt;ol&gt;</span></span>
-<span><span class="co">#&gt;  &lt;li&gt;Quid est igitur, cur ita semper deum appellet Epicurus beatum et aeternum?&lt;/li&gt;</span></span>
-<span><span class="co">#&gt;  &lt;li&gt;Tum Piso: Quoniam igitur aliquid omnes, quid Lucius noster?&lt;/li&gt;</span></span>
-<span><span class="co">#&gt;  &lt;li&gt;Ille enim occurrentia nescio quae comminiscebatur;&lt;/li&gt;</span></span>
-<span><span class="co">#&gt;  &lt;li&gt;Confecta res esset.&lt;/li&gt;</span></span>
-<span><span class="co">#&gt;  &lt;li&gt;Omnia contraria, quos etiam insanos esse vultis.&lt;/li&gt;</span></span>
-<span><span class="co">#&gt;  &lt;li&gt;Longum est enim ad omnia respondere, quae a te dicta sunt.&lt;/li&gt;</span></span>
+<span><span class="co">#&gt;  &lt;li&gt;Quamquam non negatis nos intellegere quid sit voluptas, sed quid ille dicat.&lt;/li&gt;</span></span>
+<span><span class="co">#&gt;  &lt;li&gt;Quod non faceret, si in voluptate summum bonum poneret.&lt;/li&gt;</span></span>
+<span><span class="co">#&gt;  &lt;li&gt;Ne amores quidem sanctos a sapiente alienos esse arbitrantur.&lt;/li&gt;</span></span>
+<span><span class="co">#&gt;  &lt;li&gt;Nos quidem Virtutes sic natae sumus, ut tibi serviremus, aliud negotii nihil habemus.&lt;/li&gt;</span></span>
+<span><span class="co">#&gt;  &lt;li&gt;Multoque hoc melius nos veriusque quam Stoici.&lt;/li&gt;</span></span>
+<span><span class="co">#&gt;  &lt;li&gt;Atque etiam valítudinem, vires, vacuitatem doloris non propter utilitatem solum, sed etiam ipsas propter se expetemus.&lt;/li&gt;</span></span>
 <span><span class="co">#&gt; &lt;/ol&gt;</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; &lt;p&gt;Est, ut dicis, inquit; Quo plebiscito decreta a senatu est consuli quaestio Cn. Tu quidem reddes; Ita credo. &lt;/p&gt;</span></span></code></pre></div>
+<span><span class="co">#&gt; &lt;p&gt;Audeo dicere, inquit. Itaque hic ipse iam pridem est reiectus; Duo Reges: constructio interrete. Quis istum dolorem timet? Illa argumenta propria videamus, cur omnia sint paria peccata. &lt;/p&gt;</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; &lt;blockquote cite='http://loripsum.net'&gt;</span></span>
+<span><span class="co">#&gt;  Dabit hoc Zenoni Polemo, etiam magister eius et tota illa gens et reliqui, qui virtutem omnibus rebus multo anteponentes adiungunt ei tamen aliquid summo in bono finiendo.</span></span>
+<span><span class="co">#&gt; &lt;/blockquote&gt;</span></span></code></pre></div>
 <p>Using GitHub markdown, this ends up looking like:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="va">ipsum</span><span class="op">)</span></span></code></pre></div>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac tamen hic mallet non dolere. Ut aliquid scire se gaudeant? Eam stabilem appellas. Satis est ad hoc responsum. <b>Age sane, inquam.</b> Duo Reges: constructio interrete.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc simile tandem est? Tenent mordicus. Beatum, inquit. Primum quid tu dicis breve? Re mihi non aeque satisfacit, et quidem locis pluribus. Magna laus.
 </p>
 <p>
-Haec para/doca illi, nos admirabilia dicamus. Bork Apud ceteros autem philosophos, qui quaesivit aliquid, tacet;
+Ego vero isti, inquam, permitto. Omnia contraria, quos etiam insanos esse vultis. Istic sum, inquit. <b>Erat enim Polemonis.</b> Magna laus. Praeteritis, inquit, gaudeo.
 </p>
-<blockquote cite="http://loripsum.net">
-Quamvis enim depravatae non sint, pravae tamen esse possunt.
-</blockquote>
 <ol>
 <li>
-Quid est igitur, cur ita semper deum appellet Epicurus beatum et aeternum?
+Quamquam non negatis nos intellegere quid sit voluptas, sed quid ille dicat.
 </li>
 <li>
-Tum Piso: Quoniam igitur aliquid omnes, quid Lucius noster?
+Quod non faceret, si in voluptate summum bonum poneret.
 </li>
 <li>
-Ille enim occurrentia nescio quae comminiscebatur;
+Ne amores quidem sanctos a sapiente alienos esse arbitrantur.
 </li>
 <li>
-Confecta res esset.
+Nos quidem Virtutes sic natae sumus, ut tibi serviremus, aliud negotii nihil habemus.
 </li>
 <li>
-Omnia contraria, quos etiam insanos esse vultis.
+Multoque hoc melius nos veriusque quam Stoici.
 </li>
 <li>
-Longum est enim ad omnia respondere, quae a te dicta sunt.
+Atque etiam valítudinem, vires, vacuitatem doloris non propter utilitatem solum, sed etiam ipsas propter se expetemus.
 </li>
 </ol>
 <p>
-Est, ut dicis, inquit; Quo plebiscito decreta a senatu est consuli quaestio Cn. Tu quidem reddes; Ita credo.
+Audeo dicere, inquit. Itaque hic ipse iam pridem est reiectus; Duo Reges: constructio interrete. Quis istum dolorem timet? Illa argumenta propria videamus, cur omnia sint paria peccata.
 </p>
+<blockquote cite="http://loripsum.net">
+Dabit hoc Zenoni Polemo, etiam magister eius et tota illa gens et reliqui, qui virtutem omnibus rebus multo anteponentes adiungunt ei tamen aliquid summo in bono finiendo.
+</blockquote>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">
