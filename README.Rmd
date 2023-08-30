@@ -22,7 +22,7 @@ knitr::opts_chunk$set(
 
 The goal of lipsum is to get easy access to several "Lorem Ipsum" web APIs to simply generate customisable placeholder text. In the R world, this will most likely commonly be used within RMarkdown/Quarto documents and Shiny apps.
 
-The `{lorem}` package also serves a similar purpose, but `{lipsum}`'s interfacing with a variety of APIs may allow for more flexible placeholder outputs. For example, the `loripsum()` function gives a lot of control of the kinds of features the placeholder text should have (for example, lists, links, headers, and so on).
+The `{lorem}` package also serves a similar purpose, but `{lipsum}`'s interfacing with a variety of APIs may allow for more flexible placeholder outputs. For example, the `lipsum_loripsum()` function gives a lot of control of the kinds of features the placeholder text should have (for example, lists, links, headers, and so on).
 
 `{lipsum}` owes a lot to the [awesome-ipsum](https://github.com/templeman/awesome-ipsum) list, and uses its same categorisations:
 
@@ -30,7 +30,7 @@ The `{lorem}` package also serves a similar purpose, but `{lipsum}`'s interfacin
 
 * **Whimsical**, which are more playful generators which impersonate celebrities, list the names of dinosaurs, use profanity, and so on. These are perhaps more appropriate for personal projects!
 
-## Installation
+## 💻 Installation
 
 You can install the development version of `{lipsum}` like so:
 
@@ -39,22 +39,42 @@ You can install the development version of `{lipsum}` like so:
 pak::pak("jack-davison/lipsum")
 ```
 
-## Example
+## 🖱️ Example
+
+Some examples of `{lipsum}` functions are shown below.
+
+### 💼 Practical
 
 The below code generates example lorem ipsum generated using the [loripsum API](https://loripsum.net). This is the most useful, customisable function in the package, and is probably most appropriate for professional use.
 
 ```{r example}
-ipsum <- lipsum::loripsum(n = 3, decorate = TRUE, ol = TRUE, bq = TRUE)
+ipsum <- lipsum::lipsum_loripsum(n = 3, decorate = TRUE, ol = TRUE, bq = TRUE)
 ```
 
 In R, the output looks like this:
 
 ```{r r, results='markup'}
-cat(ipsum)
+ipsum
 ```
 
 Using GitHub markdown, this ends up looking like:
 
-```{r md, results='asis'}
-cat(ipsum)
+`r ipsum`
+
+### 🦕 Whimsical
+
+As well as the practical lorem ipsum generators, there are a few "whimsical" generators that are a bit more fun. For example, `lipsum_dino()` generates a load of dinosaur names.
+
+```{r dinosaurs}
+dinosaurs <- lipsum::lipsum_dino(n_paras = 3L, n_words = 10L)
 ```
+
+`r dinosaurs`
+
+On the other hand, `lipsum_actor()` generates some text as if it were being spoken by a famous person or character from pop culture. The API behind this function gives no control over which voice you are receiving, so the one below is chosen completely at random!
+
+```{r actor}
+actor <- lipsum::lipsum_actor(n = 3L)
+```
+
+`r actor`

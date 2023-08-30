@@ -15,5 +15,6 @@ lipsum_actor <- function(n = 5L, paragraphs = TRUE) {
   url <-
     paste0("devlorem.kovah.de/api/", as.integer(n), "?format=text&paragraphs=", x)
   raw <- curl::curl_fetch_memory(url)
-  rawToChar(raw$content)
+  out <- rawToChar(raw$content)
+  gsub("\n", "\n\n", out)
 }

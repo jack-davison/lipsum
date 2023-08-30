@@ -22,18 +22,18 @@
 #'
 #' @export
 lipsum_markdown <- function(n = 5L,
-                       no_headers = FALSE,
-                       no_code = FALSE,
-                       no_inline_markup = FALSE,
-                       no_quotes = FALSE,
-                       no_lists = FALSE,
-                       no_external_links = FALSE,
-                       no_wrapping = FALSE,
-                       underline_headers = FALSE,
-                       reference_links = FALSE,
-                       underscore_em = FALSE,
-                       underscore_strong = FALSE,
-                       fenced_code_blocks = FALSE) {
+                            no_headers = FALSE,
+                            no_code = FALSE,
+                            no_inline_markup = FALSE,
+                            no_quotes = FALSE,
+                            no_lists = FALSE,
+                            no_external_links = FALSE,
+                            no_wrapping = FALSE,
+                            underline_headers = FALSE,
+                            reference_links = FALSE,
+                            underscore_em = FALSE,
+                            underscore_strong = FALSE,
+                            fenced_code_blocks = FALSE) {
   args <- as.list(environment())
   args <- args[-1]
   args <- args[unlist(args)]
