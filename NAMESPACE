@@ -2,8 +2,10 @@
 
 export(baconipsum)
 export(corporatelorem)
+export(devlorem)
 export(hipsteripsum)
 export(litipsum)
+export(loremricksum)
 export(loripsum)
 export(markdownum)
 export(metaphorpsum)

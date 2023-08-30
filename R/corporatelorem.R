@@ -19,7 +19,7 @@ corporatelorem <- function(n = 5L, paragraphs = TRUE, textformat = TRUE) {
       as.integer(n), "?"
     )
 
-  if (!paragraphs) {
+  if (paragraphs) {
     url <- paste0(url, "paragraphs=true")
   }
 

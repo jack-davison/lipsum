@@ -35,14 +35,29 @@ example_lit <-
 </details>
 <br>
 
+# Celebrity Imppersonations: DevLorem
+
+`devlorem()` gives very little control over its output. However, the output is pretty fun - it gives a few paragraphs impersonating a famous actor or pop culture icon.
+
+```{r devlorem}
+example_dev <- devlorem(n = 5L)
+```
+
+<details>
+<summary> View Output </summary>
+`r example_dev`
+</details>
+<br>
+
+
 # Silly Metaphors: Metaphorpsum
 
 The `metaphorpsum()` function comes up with confusing metaphors. At a glance they read like English, but if readers dare look closer they'll see they're pretty nonsensical.
 
-```{r}
+```{r metaphor}
 example_metaphor <-
-  metaphorpsum(n_paras = 2,
-               n_sentences = 4,
+  metaphorpsum(n_paras = 2L,
+               n_sentences = 4L,
                p = FALSE) # use p tags?
 ```
 
@@ -56,7 +71,7 @@ example_metaphor <-
 
 `baconipsum()` and `hipsteripsum()` are very similar in that their options are identical and simply (partly) replace the random Latin of lorem ipsum with meat words and hipster-y phrases, respectively.  
 
-```{r}
+```{r random}
 example_meat <- baconipsum(n_sentences = 5L,
                            type = "all-meat",
                            start_with_lorem = TRUE)
@@ -79,3 +94,13 @@ example_hipster <- hipsteripsum(n_sentences = 5L,
 
 </details>
 <br>
+
+# Rick and Morty Quotes: Loremricksum
+
+The `loremricksum()` function returns paragraphs of random quotes from the adult animated comedy, Rick & Morty. Note that the output from this may contain obscenities, so is not reproduced here.
+
+```{r rick}
+example_rick <-
+  loremricksum(n_paras = 2L,
+               n_sentences = 4L)
+```

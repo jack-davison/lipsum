@@ -32,7 +32,9 @@ Generates pretentious placeholder text. You wouldn't understand, man!
 \seealso{
 Other whimsical generators: 
 \code{\link{baconipsum}()},
+\code{\link{devlorem}()},
 \code{\link{litipsum}()},
+\code{\link{loremricksum}()},
 \code{\link{metaphorpsum}()}
 }
 \concept{whimsical generators}
