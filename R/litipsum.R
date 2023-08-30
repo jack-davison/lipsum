@@ -31,7 +31,7 @@ litipsum <- function(n = NULL,
   }
 
   if (!is.null(n)) {
-    url <- paste0(url, n, "/")
+    url <- paste0(url, as.integer(n), "/")
   }
 
   if (!is.null(tag)) {
@@ -40,7 +40,7 @@ litipsum <- function(n = NULL,
     url <- paste0(url, tag, "/")
   }
 
-  raw <- httr::GET(url)
+  raw <- curl::curl_fetch_memory(url)
   rawToChar(raw$content)
 }
 

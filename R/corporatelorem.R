@@ -5,33 +5,25 @@
 #' the NY Times, The Guardian and The Verge.
 #'
 #' @param n Integer. The number of paragraphs to generate. Defaults to 5.
-#' @param paragraphs `r loripsum_arg("shows paragraph tags in the output", "TRUE")`
-#' @param textformat `r loripsum_arg("returns a single text string. Otherwise returns a named list of source and paragraphs.", "TRUE")`
+#' @param p `r loripsum_arg("shows paragraph tags in the output", "TRUE")`
 #'
 #' @family practical generators
 #' @source <https://corporatelorem.kovah.de/>
 #'
 #' @export
-corporatelorem <- function(n = 5L, paragraphs = TRUE, textformat = TRUE) {
+corporatelorem <- function(n = 5L, p = TRUE) {
   url <-
     paste0(
       "corporatelorem.kovah.de/api/",
       as.integer(n), "?"
     )
 
-  if (paragraphs) {
+  if (p) {
     url <- paste0(url, "paragraphs=true")
   }
 
-  if (textformat) {
-    url <- paste0(url, "&format=text")
-  }
+  url <- paste0(url, "&format=text")
 
-  raw <- httr::GET(url)
-
-  if (!textformat) {
-    jsonlite::parse_json(raw, simplifyVector = TRUE)
-  } else {
-    rawToChar(raw$content)
-  }
+  raw <- curl::curl_fetch_memory(url)
+  rawToChar(raw$content)
 }

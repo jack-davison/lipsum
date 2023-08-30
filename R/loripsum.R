@@ -49,7 +49,7 @@ loripsum <-
       url <- paste0(url, i, "/")
     }
 
-    raw <- httr::GET(url = url)
+    raw <- curl::curl_fetch_memory(url)
     rawToChar(raw$content)
   }
 

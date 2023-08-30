@@ -36,6 +36,6 @@ baconipsum <- function(n_paras = 5L,
     url <- paste0(url, "sentences=", as.integer(n_sentences))
   }
 
-  raw <- httr::GET(url)
+  raw <- curl::curl_fetch_memory(url)
   rawToChar(raw$content)
 }

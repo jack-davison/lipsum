@@ -13,7 +13,7 @@
 devlorem <- function(n = 5L, paragraphs = TRUE) {
   x <- ifelse(paragraphs, "true", "false")
   url <-
-    paste0("devlorem.kovah.de/api/", n, "?format=text&paragraphs=", x)
-  raw <- httr::GET(url)
+    paste0("devlorem.kovah.de/api/", as.integer(n), "?format=text&paragraphs=", x)
+  raw <- curl::curl_fetch_memory(url)
   rawToChar(raw$content)
 }

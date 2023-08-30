@@ -18,10 +18,10 @@ loremricksum <- function(n_paras = 2L,
       "http://loremricksum.com/api/?paragraphs=",
       as.integer(n_paras),
       "&quotes=",
-      n_sentences
+      as.integer(n_sentences)
     )
 
-  raw <- httr::GET(url)
+  raw <- curl::curl_fetch_memory(url)
   json <- rawToChar(raw$content)
   parsed <- jsonlite::parse_json(json)
 

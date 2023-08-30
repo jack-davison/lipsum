@@ -20,6 +20,6 @@ dinoipsum <- function(n_paras = 10L,
       as.integer(n_words)
     )
 
-  raw <- httr::GET(url)
+  raw <- curl::curl_fetch_memory(url)
   rawToChar(raw$content)
 }

@@ -7,14 +7,12 @@
 \url{https://corporatelorem.kovah.de/}
 }
 \usage{
-corporatelorem(n = 5L, paragraphs = TRUE, textformat = TRUE)
+corporatelorem(n = 5L, p = TRUE)
 }
 \arguments{
 \item{n}{Integer. The number of paragraphs to generate. Defaults to 5.}
 
-\item{paragraphs}{Logical. If \code{TRUE}, shows paragraph tags in the output. Defaults to \code{TRUE}.}
-
-\item{textformat}{Logical. If \code{TRUE}, returns a single text string. Otherwise returns a named list of source and paragraphs.. Defaults to \code{TRUE}.}
+\item{p}{Logical. If \code{TRUE}, shows paragraph tags in the output. Defaults to \code{TRUE}.}
 }
 \description{
 Generates random "corporate-style" placeholder text using the CorporateLorem

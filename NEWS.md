@@ -1,3 +1,7 @@
 # lipsum (development version)
 
-* Added a `NEWS.md` file to track changes to the package.
+* Added 3 practical lorem ipsum generators.
+
+* Added several whimsical lorem ipsum generators.
+
+* Powered by `{curl}` and, where relevant, `{jsonlite}`.

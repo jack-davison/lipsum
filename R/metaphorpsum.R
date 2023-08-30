@@ -26,6 +26,6 @@ metaphorpsum <- function(n_paras = 2L,
     url <- paste0(url, "?p=true")
   }
 
-  raw <- httr::GET(url)
+  raw <- curl::curl_fetch_memory(url)
   rawToChar(raw$content)
 }

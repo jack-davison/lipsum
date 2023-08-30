@@ -50,7 +50,7 @@ markdownum <- function(n = 5L,
     url <- paste0(url, i, "=on&")
   }
 
-  raw <- httr::GET(url)
+  raw <- curl::curl_fetch_memory(url)
 
   rawToChar(raw$content)
 }
