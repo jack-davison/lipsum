@@ -11,7 +11,7 @@
 #' @source <https://corporatelorem.kovah.de/>
 #'
 #' @export
-corporatelorem <- function(n = 5L, p = TRUE) {
+lipsum_corporate <- function(n = 5L, p = TRUE) {
   url <-
     paste0(
       "corporatelorem.kovah.de/api/",

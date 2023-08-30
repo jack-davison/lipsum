@@ -11,7 +11,7 @@
 #' @source <http://metaphorpsum.com/>
 #'
 #' @export
-metaphorpsum <- function(n_paras = 2L,
+lipsum_metaphor <- function(n_paras = 2L,
                          n_sentences = 4L,
                          p = FALSE) {
   url <-

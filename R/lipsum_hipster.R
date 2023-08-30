@@ -14,7 +14,7 @@
 #' @source <https://hipsum.co/>
 #'
 #' @export
-hipsteripsum <- function(n_paras = 5L,
+lipsum_hipster <- function(n_paras = 5L,
                          n_sentences = NULL,
                          type = c("hipster-centric", "hipster-latin"),
                          start_with_lorem = TRUE) {

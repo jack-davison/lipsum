@@ -11,7 +11,7 @@
 #' @source <http://loremricksum.com/>
 #'
 #' @export
-loremricksum <- function(n_paras = 2L,
+lipsum_rick <- function(n_paras = 2L,
                          n_sentences = 4L) {
   url <-
     paste0(

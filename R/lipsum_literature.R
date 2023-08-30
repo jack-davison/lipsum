@@ -16,7 +16,7 @@
 #' @source <https://litipsum.com/>
 #'
 #' @export
-litipsum <- function(n = NULL,
+lipsum_literature <- function(n = NULL,
                      tag = NULL,
                      source = NULL) {
   url <- "https://litipsum.com/api/"

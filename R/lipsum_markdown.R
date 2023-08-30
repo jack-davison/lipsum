@@ -21,7 +21,7 @@
 #' @order 2
 #'
 #' @export
-markdownum <- function(n = 5L,
+lipsum_markdown <- function(n = 5L,
                        no_headers = FALSE,
                        no_code = FALSE,
                        no_inline_markup = FALSE,

@@ -19,7 +19,7 @@
 #' @order 3
 #'
 #' @export
-seazon <- function(latin = TRUE,
+lipsum_seazon <- function(latin = TRUE,
                          start_with_lorem = TRUE,
                          use_periods = TRUE,
                          use_sentence_case = TRUE,

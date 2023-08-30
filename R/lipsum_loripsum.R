@@ -23,7 +23,7 @@
 #' @order 1
 #'
 #' @export
-loripsum <-
+lipsum_loripsum <-
   function(n = 5L,
            length = "short",
            decorate = FALSE,

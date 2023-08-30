@@ -20,11 +20,11 @@ library(lipsum)
 
 # Classic Literature: Litipsum
 
-The `litipsum()` function is not really as "silly" as the other whimsical ipsum generators; it grabs excerpts from public domain classic literature like Sherlock Holmes, Dracula, and so on. Users can opt into paragraph and list tags, but don't expect any more complicated elements than that. 
+The `lipsum_literature()` function is not really as "silly" as the other whimsical ipsum generators; it grabs excerpts from public domain classic literature like Sherlock Holmes, Dracula, and so on. Users can opt into paragraph and list tags, but don't expect any more complicated elements than that. 
 
 ```{r litipsum}
 example_lit <-
-  litipsum(
+  lipsum_literature(
     n = 3L,
     tag = "p", # add p tags
     source = "dracula"
@@ -39,10 +39,10 @@ example_lit <-
 
 # Celebrity Imppersonations: DevLorem
 
-`devlorem()` gives very little control over its output. However, the output is pretty fun - it gives a few paragraphs impersonating a famous actor or pop culture icon.
+`lipsum_actor()` gives very little control over its output. However, the output is pretty fun - it gives a few paragraphs impersonating a famous actor or pop culture icon.
 
 ```{r devlorem}
-example_dev <- devlorem(n = 5L)
+example_dev <- lipsum_actor(n = 5L)
 ```
 
 <details>
@@ -54,11 +54,11 @@ example_dev <- devlorem(n = 5L)
 
 # Silly Metaphors: Metaphorpsum
 
-The `metaphorpsum()` function comes up with confusing metaphors. At a glance they read like English, but if readers dare look closer they'll see they're pretty nonsensical.
+The `example_metaphor()` function comes up with confusing metaphors. At a glance they read like English, but if readers dare look closer they'll see they're pretty nonsensical.
 
 ```{r metaphor}
 example_metaphor <-
-  metaphorpsum(
+  lipsum_metaphor(
     n_paras = 2L,
     n_sentences = 4L,
     p = FALSE
@@ -73,11 +73,11 @@ example_metaphor <-
 
 # Dinosaur Names: Dinoipsum
 
-The `dinoipsum()` function takes inspiration from the classic Lorem Ipsum in that it creates paragaphs of non-English text. However, instead of Latin, it fills the paragraphs with dinosaur names instead!
+The `lipsum_dino()` function takes inspiration from the classic Lorem Ipsum in that it creates paragaphs of non-English text. However, instead of Latin, it fills the paragraphs with dinosaur names instead!
 
 ```{r dinos}
 example_dino <-
-  dinoipsum(
+  lipsum_dino(
     n_paras = 5L,
     n_words = 15L
   )
@@ -91,16 +91,16 @@ example_dino <-
 
 # Random Words: Bacon & Hipsters
 
-`baconipsum()` and `hipsteripsum()` are very similar in that their options are identical and simply (partly) replace the random Latin of lorem ipsum with meat words and hipster-y phrases, respectively.  
+`lipsum_bacon()` and `lipsum_hipster()` are very similar in that their options are identical and simply (partly) replace the random Latin of lorem ipsum with meat words and hipster-y phrases, respectively.  
 
 ```{r random}
-example_meat <- baconipsum(
+example_meat <- lipsum_bacon(
   n_sentences = 5L,
   type = "all-meat",
   start_with_lorem = TRUE
 )
 
-example_hipster <- hipsteripsum(
+example_hipster <- lipsum_hipster(
   n_sentences = 5L,
   type = "hipster-centric",
   start_with_lorem = TRUE
@@ -123,11 +123,11 @@ example_hipster <- hipsteripsum(
 
 # Rick and Morty Quotes: Loremricksum
 
-The `loremricksum()` function returns paragraphs of random quotes from the adult animated comedy, Rick & Morty. Note that the output from this may contain obscenities, so is not reproduced here.
+The `lipsum_rick()` function returns paragraphs of random quotes from the adult animated comedy, Rick & Morty. Note that the output from this may contain obscenities, so is not reproduced here.
 
 ```{r rick}
 example_rick <-
-  loremricksum(
+  lipsum_rick(
     n_paras = 2L,
     n_sentences = 4L
   )

@@ -15,7 +15,7 @@
 #' @source <https://baconipsum.com/>
 #'
 #' @export
-baconipsum <- function(n_paras = 5L,
+lipsum_bacon <- function(n_paras = 5L,
                        n_sentences = NULL,
                        type = c("all-meat", "meat-and-filler"),
                        start_with_lorem = TRUE) {

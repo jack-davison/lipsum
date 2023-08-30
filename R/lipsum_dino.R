@@ -10,7 +10,7 @@
 #' @source <https://dinoipsum.com/>
 #'
 #' @export
-dinoipsum <- function(n_paras = 10L,
+lipsum_dino <- function(n_paras = 10L,
                       n_words = 30L) {
   url <-
     paste0(

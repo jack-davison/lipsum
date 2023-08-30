@@ -20,11 +20,11 @@ library(lipsum)
 
 # Lorem Ipsum with various HTML tags: Loripsum
 
-The `loripsum()` function is probably the best go-to place holder text API in the package, and provides the most control over the output as far as contents are concerned.
+The `lipsum_loripsum()` function is probably the best go-to place holder text API in the package, and provides the most control over the output as far as contents are concerned.
 
 ```{r loripsum}
 example_loripsum <-
-  loripsum(
+  lipsum_loripsum(
     n = 3L,
     length = "short",
     decorate = TRUE, # adds italics, bold, etc.
@@ -52,7 +52,7 @@ The Seazon API contains fewer HTML tags than Loripsum, but is similarly very cus
 
 ```{r seazon}
 example_seazon <-
-  seazon(
+  lipsum_seazon(
     # features
     latin = TRUE,
     start_with_lorem = TRUE,
@@ -86,7 +86,7 @@ The Lorem Markdownum API is similar to the Loripsum API in terms of giving a lot
 
 ```{r md}
 example_markdown <-
-  lipsum::markdownum(
+  lipsum_markdown(
     n = 10L,
     # drop various elements?
     no_headers = TRUE,
@@ -119,7 +119,7 @@ CorporateLorem is very different from Loripsum in that users get exceedingly lit
 
 ```{r corporate}
 example_corporate <-
-  lipsum::corporatelorem(n = 3L)
+  lipsum_corporate(n = 3L)
 ```
 
 <details>
