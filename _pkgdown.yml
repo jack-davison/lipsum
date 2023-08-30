@@ -1,4 +1,8 @@
 url: https://jack-davison.github.io/lipsum/
+authors:
+  Jack Davison:
+      href: https://jack-davison.github.io/
+
 template:
   bootstrap: 5
   bootswatch: journal
