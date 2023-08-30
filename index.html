@@ -87,14 +87,14 @@
 <!-- badges: start -->
 
 <p>The goal of lipsum is to get easy access to several “Lorem Ipsum” web APIs to simply generate customisable placeholder text. In the R world, this will most likely commonly be used within RMarkdown/Quarto documents and Shiny apps.</p>
-<p>The <a href="https://github.com/gadenbuie/lorem" class="external-link">lorem</a> package also serves a similar purpose, but <a href="https://github.com/jack-davison/lipsum" class="external-link">lipsum</a>’s interfacing with a variety of APIs may allow for more flexible placeholder outputs. For example, the <code>loripsum()</code> function gives a lot of control of the kinds of features the placeholder text should have (for example, lists, links, headers, and so on).</p>
+<p>The <a href="https://github.com/gadenbuie/lorem" class="external-link">lorem</a> package also serves a similar purpose, but <a href="https://github.com/jack-davison/lipsum" class="external-link">lipsum</a>’s interfacing with a variety of APIs may allow for more flexible placeholder outputs. For example, the <code><a href="reference/lipsum_loripsum.html">lipsum_loripsum()</a></code> function gives a lot of control of the kinds of features the placeholder text should have (for example, lists, links, headers, and so on).</p>
 <p><a href="https://github.com/jack-davison/lipsum" class="external-link">lipsum</a> owes a lot to the <a href="https://github.com/templeman/awesome-ipsum" class="external-link">awesome-ipsum</a> list, and uses its same categorisations:</p>
 <ul>
 <li><p><strong>Practical</strong>, which are placeholder generators that are most useful for “professional” settings. These either generate text in Latin, or business-sounding text like newspaper articles.</p></li>
 <li><p><strong>Whimsical</strong>, which are more playful generators which impersonate celebrities, list the names of dinosaurs, use profanity, and so on. These are perhaps more appropriate for personal projects!</p></li>
 </ul>
 <div class="section level2">
-<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+<h2 id="id_-installation">💻 Installation<a class="anchor" aria-label="anchor" href="#id_-installation"></a>
 </h2>
 <p>You can install the development version of <a href="https://github.com/jack-davison/lipsum" class="external-link">lipsum</a> like so:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
@@ -102,68 +102,67 @@
 <span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="http://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"jack-davison/lipsum"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
-<h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
+<h2 id="id_️-example">🖱️ Example<a class="anchor" aria-label="anchor" href="#id_%EF%B8%8F-example"></a>
 </h2>
+<p>Some examples of <a href="https://github.com/jack-davison/lipsum" class="external-link">lipsum</a> functions are shown below.</p>
+<div class="section level3">
+<h3 id="id_-practical">💼 Practical<a class="anchor" aria-label="anchor" href="#id_-practical"></a>
+</h3>
 <p>The below code generates example lorem ipsum generated using the <a href="https://loripsum.net" class="external-link">loripsum API</a>. This is the most useful, customisable function in the package, and is probably most appropriate for professional use.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">ipsum</span> <span class="op">&lt;-</span> <span class="fu">lipsum</span><span class="fu">::</span><span class="fu">loripsum</span><span class="op">(</span>n <span class="op">=</span> <span class="fl">3</span>, decorate <span class="op">=</span> <span class="cn">TRUE</span>, ol <span class="op">=</span> <span class="cn">TRUE</span>, bq <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">ipsum</span> <span class="op">&lt;-</span> <span class="fu">lipsum</span><span class="fu">::</span><span class="fu"><a href="reference/lipsum_loripsum.html">lipsum_loripsum</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">3</span>, decorate <span class="op">=</span> <span class="cn">TRUE</span>, ol <span class="op">=</span> <span class="cn">TRUE</span>, bq <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
 <p>In R, the output looks like this:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="va">ipsum</span><span class="op">)</span></span>
-<span><span class="co">#&gt; &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc simile tandem est? Tenent mordicus. Beatum, inquit. Primum quid tu dicis breve? Re mihi non aeque satisfacit, et quidem locis pluribus. Magna laus. &lt;/p&gt;</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; &lt;p&gt;Ego vero isti, inquam, permitto. Omnia contraria, quos etiam insanos esse vultis. Istic sum, inquit. &lt;b&gt;Erat enim Polemonis.&lt;/b&gt; Magna laus. Praeteritis, inquit, gaudeo. &lt;/p&gt;</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; &lt;ol&gt;</span></span>
-<span><span class="co">#&gt;  &lt;li&gt;Quamquam non negatis nos intellegere quid sit voluptas, sed quid ille dicat.&lt;/li&gt;</span></span>
-<span><span class="co">#&gt;  &lt;li&gt;Quod non faceret, si in voluptate summum bonum poneret.&lt;/li&gt;</span></span>
-<span><span class="co">#&gt;  &lt;li&gt;Ne amores quidem sanctos a sapiente alienos esse arbitrantur.&lt;/li&gt;</span></span>
-<span><span class="co">#&gt;  &lt;li&gt;Nos quidem Virtutes sic natae sumus, ut tibi serviremus, aliud negotii nihil habemus.&lt;/li&gt;</span></span>
-<span><span class="co">#&gt;  &lt;li&gt;Multoque hoc melius nos veriusque quam Stoici.&lt;/li&gt;</span></span>
-<span><span class="co">#&gt;  &lt;li&gt;Atque etiam valítudinem, vires, vacuitatem doloris non propter utilitatem solum, sed etiam ipsas propter se expetemus.&lt;/li&gt;</span></span>
-<span><span class="co">#&gt; &lt;/ol&gt;</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; &lt;p&gt;Audeo dicere, inquit. Itaque hic ipse iam pridem est reiectus; Duo Reges: constructio interrete. Quis istum dolorem timet? Illa argumenta propria videamus, cur omnia sint paria peccata. &lt;/p&gt;</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; &lt;blockquote cite='http://loripsum.net'&gt;</span></span>
-<span><span class="co">#&gt;  Dabit hoc Zenoni Polemo, etiam magister eius et tota illa gens et reliqui, qui virtutem omnibus rebus multo anteponentes adiungunt ei tamen aliquid summo in bono finiendo.</span></span>
-<span><span class="co">#&gt; &lt;/blockquote&gt;</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">ipsum</span></span>
+<span><span class="co">#&gt; [1] "&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;mark&gt;Prioris generis est docilitas, memoria;&lt;/mark&gt; Estne, quaeso, inquam, sitienti in bibendo voluptas? &lt;i&gt;Ego vero isti, inquam, permitto.&lt;/i&gt; Ut id aliis narrare gestiant? Duo Reges: constructio interrete. Odium autem et invidiam facile vitabis. &lt;/p&gt;\n\n&lt;blockquote cite='http://loripsum.net'&gt;\n\tIam argumenti ratione conclusi caput esse faciunt ea, quae perspicua dicunt, deinde ordinem sequuntur, tum, quid verum sit in singulis, extrema conclusio est.\n&lt;/blockquote&gt;\n\n\n&lt;p&gt;Quid sequatur, quid repugnet, vident. Minime vero, inquit ille, consentit. &lt;b&gt;Bork&lt;/b&gt; Que Manilium, ab iisque M. Quae diligentissime contra Aristonem dicuntur a Chryippo. &lt;/p&gt;\n\n&lt;p&gt;&lt;b&gt;Habes, inquam, Cato, formam eorum, de quibus loquor, philosophorum.&lt;/b&gt; Ex rebus enim timiditas, non ex vocabulis nascitur. Equidem etiam Epicurum, in physicis quidem, Democriteum puto. Habes, inquam, Cato, formam eorum, de quibus loquor, philosophorum. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Idemne, quod iucunde? Immo alio genere; Quo modo? &lt;/p&gt;\n\n&lt;ol&gt;\n\t&lt;li&gt;Quae diligentissime contra Aristonem dicuntur a Chryippo.&lt;/li&gt;\n\t&lt;li&gt;Si longus, levis dictata sunt.&lt;/li&gt;\n\t&lt;li&gt;Suam denique cuique naturam esse ad vivendum ducem.&lt;/li&gt;\n\t&lt;li&gt;Non ego tecum iam ita iocabor, ut isdem his de rebus, cum L.&lt;/li&gt;\n\t&lt;li&gt;Satisne ergo pudori consulat, si quis sine teste libidini pareat?&lt;/li&gt;\n&lt;/ol&gt;\n\n\n"</span></span></code></pre></div>
 <p>Using GitHub markdown, this ends up looking like:</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="va">ipsum</span><span class="op">)</span></span></code></pre></div>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc simile tandem est? Tenent mordicus. Beatum, inquit. Primum quid tu dicis breve? Re mihi non aeque satisfacit, et quidem locis pluribus. Magna laus.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. <mark>Prioris generis est docilitas, memoria;</mark> Estne, quaeso, inquam, sitienti in bibendo voluptas? <i>Ego vero isti, inquam, permitto.</i> Ut id aliis narrare gestiant? Duo Reges: constructio interrete. Odium autem et invidiam facile vitabis.
+</p>
+<blockquote cite="http://loripsum.net">
+Iam argumenti ratione conclusi caput esse faciunt ea, quae perspicua dicunt, deinde ordinem sequuntur, tum, quid verum sit in singulis, extrema conclusio est.
+</blockquote>
+<p>
+Quid sequatur, quid repugnet, vident. Minime vero, inquit ille, consentit. <b>Bork</b> Que Manilium, ab iisque M. Quae diligentissime contra Aristonem dicuntur a Chryippo.
 </p>
 <p>
-Ego vero isti, inquam, permitto. Omnia contraria, quos etiam insanos esse vultis. Istic sum, inquit. <b>Erat enim Polemonis.</b> Magna laus. Praeteritis, inquit, gaudeo.
+<b>Habes, inquam, Cato, formam eorum, de quibus loquor, philosophorum.</b> Ex rebus enim timiditas, non ex vocabulis nascitur. Equidem etiam Epicurum, in physicis quidem, Democriteum puto. Habes, inquam, Cato, formam eorum, de quibus loquor, philosophorum. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Idemne, quod iucunde? Immo alio genere; Quo modo?
 </p>
 <ol>
 <li>
-Quamquam non negatis nos intellegere quid sit voluptas, sed quid ille dicat.
+Quae diligentissime contra Aristonem dicuntur a Chryippo.
 </li>
 <li>
-Quod non faceret, si in voluptate summum bonum poneret.
+Si longus, levis dictata sunt.
 </li>
 <li>
-Ne amores quidem sanctos a sapiente alienos esse arbitrantur.
+Suam denique cuique naturam esse ad vivendum ducem.
 </li>
 <li>
-Nos quidem Virtutes sic natae sumus, ut tibi serviremus, aliud negotii nihil habemus.
+Non ego tecum iam ita iocabor, ut isdem his de rebus, cum L.
 </li>
 <li>
-Multoque hoc melius nos veriusque quam Stoici.
-</li>
-<li>
-Atque etiam valítudinem, vires, vacuitatem doloris non propter utilitatem solum, sed etiam ipsas propter se expetemus.
+Satisne ergo pudori consulat, si quis sine teste libidini pareat?
 </li>
 </ol>
-<p>
-Audeo dicere, inquit. Itaque hic ipse iam pridem est reiectus; Duo Reges: constructio interrete. Quis istum dolorem timet? Illa argumenta propria videamus, cur omnia sint paria peccata.
-</p>
-<blockquote cite="http://loripsum.net">
-Dabit hoc Zenoni Polemo, etiam magister eius et tota illa gens et reliqui, qui virtutem omnibus rebus multo anteponentes adiungunt ei tamen aliquid summo in bono finiendo.
-</blockquote>
+</div>
+<div class="section level3">
+<h3 id="id_-whimsical">🦕 Whimsical<a class="anchor" aria-label="anchor" href="#id_-whimsical"></a>
+</h3>
+<p>As well as the practical lorem ipsum generators, there are a few “whimsical” generators that are a bit more fun. For example, <code><a href="reference/lipsum_dino.html">lipsum_dino()</a></code> generates a load of dinosaur names.</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">dinosaurs</span> <span class="op">&lt;-</span> <span class="fu">lipsum</span><span class="fu">::</span><span class="fu"><a href="reference/lipsum_dino.html">lipsum_dino</a></span><span class="op">(</span>n_paras <span class="op">=</span> <span class="fl">3L</span>, n_words <span class="op">=</span> <span class="fl">10L</span><span class="op">)</span></span></code></pre></div>
+<p>Petrobrasaurus Drinker Kol Rapator Supersaurus Zigongosaurus Taohelong Galtonia Bakesaurus Thecodontosaurus.</p>
+<p>Moabosaurus Anabisetia Tastavinsaurus Ornithodesmus Pelorosaurus Therosaurus Pawpawsaurus Succinodon Platypelta Lapampasaurus.</p>
+<p>Antrodemus Frenguellisaurus Abrictosaurus Jiutaisaurus Azendohsaurus Deinodon Agathaumas Atsinganosaurus Zuul Psittacosaurus.</p>
+<p>On the other hand, <code><a href="reference/lipsum_actor.html">lipsum_actor()</a></code> generates some text as if it were being spoken by a famous person or character from pop culture. The API behind this function gives no control over which voice you are receiving, so the one below is chosen completely at random!</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">actor</span> <span class="op">&lt;-</span> <span class="fu">lipsum</span><span class="fu">::</span><span class="fu"><a href="reference/lipsum_actor.html">lipsum_actor</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">3L</span><span class="op">)</span></span></code></pre></div>
+<p>Harrison Ford</p>
+<p>Remember when you were six? You and your brother snuck into an empty building through a basement window. You were going to play doctor. He showed you his, but when it got to be your turn you chickened and ran; you remember that? You ever tell anybody that? Your mother, Tyrell, anybody? Remember the spider that lived outside your window? Orange body, green legs. Watched her build a web all summer, then one day there’s a big egg in it. The egg hatched… Implants. Those aren’t your memories, they’re somebody else’s. They’re Tyrell’s niece’s.</p>
+<p>Oh, Marcus. What are you trying to do, scare me? You sound like my mother. We’ve known each other for a long time. I don’t believe in magic, a lot of superstitious hocus pocus. I’m going after a find of incredible historical significance, you’re talking about the boogie man. Besides, you know what a cautious fellow I am.</p>
+<p>This site also demonstrates one of the great dangers of archaeology; not to life and limb, although that does sometimes take place. I’m talking about folklore.</p>
+</div>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">
