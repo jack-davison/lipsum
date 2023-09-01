@@ -25,5 +25,6 @@ lipsum_corporate <- function(n = 5L, p = TRUE) {
   url <- paste0(url, "&format=text")
 
   raw <- curl::curl_fetch_memory(url)
-  rawToChar(raw$content)
+  out <- rawToChar(raw$content)
+  gsub("\n", "\n\n", out)
 }
