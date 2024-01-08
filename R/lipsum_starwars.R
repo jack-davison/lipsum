@@ -13,8 +13,11 @@
 #' @export
 lipsum_starwars <- function(n = 10L, content = "episode-4") {
   content <- match.arg(content,
-                       choices = c(paste0("episode-", 1:9),
-                                   "characters", "places"))
+    choices = c(
+      paste0("episode-", 1:9),
+      "characters", "places"
+    )
+  )
 
   url <- paste0("https://forcemipsum.com/api/", content, "/", n, "/")
 
@@ -23,6 +26,3 @@ lipsum_starwars <- function(n = 10L, content = "episode-4") {
   char <- jsonlite::fromJSON(char)
   paste(char, collapse = "\n\n")
 }
-
-
-

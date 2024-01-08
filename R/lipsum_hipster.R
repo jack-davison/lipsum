@@ -15,9 +15,9 @@
 #'
 #' @export
 lipsum_hipster <- function(n_paras = 5L,
-                         n_sentences = NULL,
-                         type = c("hipster-centric", "hipster-latin"),
-                         start_with_lorem = TRUE) {
+                           n_sentences = NULL,
+                           type = c("hipster-centric", "hipster-latin"),
+                           start_with_lorem = TRUE) {
   type <-
     match.arg(type, choices = c("hipster-centric", "hipster-latin"))
 

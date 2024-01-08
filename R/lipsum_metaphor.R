@@ -12,8 +12,8 @@
 #'
 #' @export
 lipsum_metaphor <- function(n_paras = 2L,
-                         n_sentences = 4L,
-                         p = FALSE) {
+                            n_sentences = 4L,
+                            p = FALSE) {
   url <-
     paste0(
       "metaphorpsum.com/paragraphs/",

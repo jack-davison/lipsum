@@ -12,7 +12,7 @@
 #'
 #' @export
 lipsum_rick <- function(n_paras = 2L,
-                         n_sentences = 4L) {
+                        n_sentences = 4L) {
   url <-
     paste0(
       "http://loremricksum.com/api/?paragraphs=",

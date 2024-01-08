@@ -17,8 +17,8 @@
 #'
 #' @export
 lipsum_literature <- function(n = NULL,
-                     tag = NULL,
-                     source = NULL) {
+                              tag = NULL,
+                              source = NULL) {
   url <- "https://litipsum.com/api/"
 
   if (!is.null(source)) {

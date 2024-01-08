@@ -20,51 +20,63 @@
 #'
 #' @export
 lipsum_seazon <- function(latin = TRUE,
-                         start_with_lorem = TRUE,
-                         use_periods = TRUE,
-                         use_sentence_case = TRUE,
-                         p = TRUE,
-                         use_double_spaces = FALSE,
-                         random_numbers = FALSE,
-                         random_latin = TRUE,
-                         min_letters = 2L,
-                         max_letters = 9L,
-                         min_words = 45L,
-                         max_words = 85L,
-                         min_paras = 3L,
-                         max_paras = 4L
-
-){
+                          start_with_lorem = TRUE,
+                          use_periods = TRUE,
+                          use_sentence_case = TRUE,
+                          p = TRUE,
+                          use_double_spaces = FALSE,
+                          random_numbers = FALSE,
+                          random_latin = TRUE,
+                          min_letters = 2L,
+                          max_letters = 9L,
+                          min_words = 45L,
+                          max_words = 85L,
+                          min_paras = 3L,
+                          max_paras = 4L) {
   first <-
     paste0(
-      c(as.integer(latin),
+      c(
+        as.integer(latin),
         as.integer(start_with_lorem),
         as.integer(use_periods),
         as.integer(use_sentence_case),
         as.integer(p),
-        as.integer(use_double_spaces)),
+        as.integer(use_double_spaces)
+      ),
       collapse = "-"
     )
 
   second <-
-    paste0(c(as.integer(random_numbers),
-             "0",
-             as.integer(random_latin)),
-           collapse = "-")
+    paste0(
+      c(
+        as.integer(random_numbers),
+        "0",
+        as.integer(random_latin)
+      ),
+      collapse = "-"
+    )
 
   third <-
-    paste0(c(as.integer(min_letters),
-             as.integer(max_letters),
-             as.integer(min_words),
-             as.integer(max_words),
-             as.integer(min_paras),
-             as.integer(max_paras)),
-           collapse = "-")
+    paste0(
+      c(
+        as.integer(min_letters),
+        as.integer(max_letters),
+        as.integer(min_words),
+        as.integer(max_words),
+        as.integer(min_paras),
+        as.integer(max_paras)
+      ),
+      collapse = "-"
+    )
 
-  url <- paste0(c("http://api.seazon.org",
-                  first, second, third,
-                  "api.txt"),
-                collapse = "/")
+  url <- paste0(
+    c(
+      "http://api.seazon.org",
+      first, second, third,
+      "api.txt"
+    ),
+    collapse = "/"
+  )
 
   raw <- curl::curl_fetch_memory(url)
   rawToChar(raw$content)

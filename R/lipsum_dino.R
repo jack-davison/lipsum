@@ -11,7 +11,7 @@
 #'
 #' @export
 lipsum_dino <- function(n_paras = 10L,
-                      n_words = 30L) {
+                        n_words = 30L) {
   url <-
     paste0(
       "https://dinoipsum.com/api/?format=text&paragraphs=",
