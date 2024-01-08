@@ -26,6 +26,7 @@ Other whimsical generators:
 \code{\link{lipsum_dino}()},
 \code{\link{lipsum_hipster}()},
 \code{\link{lipsum_literature}()},
-\code{\link{lipsum_metaphor}()}
+\code{\link{lipsum_metaphor}()},
+\code{\link{lipsum_starwars}()}
 }
 \concept{whimsical generators}
